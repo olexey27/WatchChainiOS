@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6304456129630B4500AD6DD7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6304456029630B4500AD6DD7 /* LoginController.swift */; };
+		6306C79E2971627900357A11 /* BrowserNftAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6306C79D2971627900357A11 /* BrowserNftAPI.swift */; };
+		6307DCB42989C8560028BA52 /* CreatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6307DCB32989C8560028BA52 /* CreatorController.swift */; };
+		6307DCB72989D3B00028BA52 /* MyNftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6307DCB62989D3B00028BA52 /* MyNftViewController.swift */; };
+		6307DCB92989D3CC0028BA52 /* AddNftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6307DCB82989D3CC0028BA52 /* AddNftViewController.swift */; };
+		6307DCBC2989E3AF0028BA52 /* AddNftCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6307DCBA2989E3AF0028BA52 /* AddNftCoreData.xcdatamodeld */; };
+		63093E792979888C00D02D67 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63093E782979888C00D02D67 /* AlertManager.swift */; };
+		63093E7B2979967700D02D67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63093E7A2979967700D02D67 /* User.swift */; };
+		63093E7D2979B56100D02D67 /* WebViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63093E7C2979B56100D02D67 /* WebViewerController.swift */; };
+		633B75E8298B677E00C48FA0 /* BuyNftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B75E7298B677E00C48FA0 /* BuyNftController.swift */; };
+		633B75EA298B683D00C48FA0 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B75E9298B683D00C48FA0 /* Validator.swift */; };
+		633DBC4A299091E900E0C5CE /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633DBC49299091E900E0C5CE /* Background.swift */; };
+		634943CF29888A100059139C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634943CE29888A100059139C /* CollectionViewCell.swift */; };
+		634C69A8296686D800F57355 /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C69A7296686D800F57355 /* ProfilController.swift */; };
+		634C69AB2966B65200F57355 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 634C69AA2966B65200F57355 /* GoogleSignIn */; };
+		634C69AD2966B65200F57355 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 634C69AC2966B65200F57355 /* GoogleSignInSwift */; };
+		634C69AF2966BF7000F57355 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C69AE2966BF7000F57355 /* RegisterController.swift */; };
+		634C69B12966BF9700F57355 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C69B02966BF9700F57355 /* ForgotPasswordController.swift */; };
+		634C69B52966BFE600F57355 /* FavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C69B42966BFE600F57355 /* FavoriteController.swift */; };
+		6379F9B5297FFAB5003FF525 /* Collector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379F9B4297FFAB5003FF525 /* Collector.swift */; };
+		6379F9B7297FFB0E003FF525 /* Nft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379F9B6297FFB0D003FF525 /* Nft.swift */; };
+		63926B8A29657F1A005D2378 /* BrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63926B8929657F1A005D2378 /* BrowserController.swift */; };
+		63A7101E2980677000B4B9B5 /* NftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7101D2980677000B4B9B5 /* NftViewCell.swift */; };
+		63D75C08295304E6008F28F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D75C07295304E6008F28F0 /* AppDelegate.swift */; };
+		63D75C0A295304E6008F28F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D75C09295304E6008F28F0 /* SceneDelegate.swift */; };
+		63D75C0F295304E6008F28F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D75C0D295304E6008F28F0 /* Main.storyboard */; };
+		63D75C12295304E6008F28F0 /* WatchChainIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63D75C10295304E6008F28F0 /* WatchChainIOS.xcdatamodeld */; };
+		63D75C14295304E7008F28F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D75C13295304E7008F28F0 /* Assets.xcassets */; };
+		63D75C17295304E7008F28F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D75C15295304E7008F28F0 /* LaunchScreen.storyboard */; };
+		63D75C2029530A74008F28F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63D75C1F29530A74008F28F0 /* GoogleService-Info.plist */; };
+		63D75C2329530C53008F28F0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 63D75C2229530C53008F28F0 /* FirebaseAuth */; };
+		63D75C2529530C53008F28F0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 63D75C2429530C53008F28F0 /* FirebaseFirestore */; };
+		63D75C2729530C53008F28F0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 63D75C2629530C53008F28F0 /* FirebaseStorage */; };
+		63D75C2A29530D82008F28F0 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D75C2929530D82008F28F0 /* AuthService.swift */; };
+		63D75C2D29530FC7008F28F0 /* RegisterUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D75C2C29530FC7008F28F0 /* RegisterUserRequest.swift */; };
+		63D75C2F29532B07008F28F0 /* LoginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D75C2E29532B07008F28F0 /* LoginUserRequest.swift */; };
+		63D75C31295340AC008F28F0 /* giphyImg.gif in Resources */ = {isa = PBXBuildFile; fileRef = 63D75C30295340AC008F28F0 /* giphyImg.gif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6304456029630B4500AD6DD7 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		6306C79D2971627900357A11 /* BrowserNftAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserNftAPI.swift; sourceTree = "<group>"; };
+		6307DCB32989C8560028BA52 /* CreatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorController.swift; sourceTree = "<group>"; };
+		6307DCB62989D3B00028BA52 /* MyNftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNftViewController.swift; sourceTree = "<group>"; };
+		6307DCB82989D3CC0028BA52 /* AddNftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNftViewController.swift; sourceTree = "<group>"; };
+		6307DCBB2989E3AF0028BA52 /* AddNftCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AddNftCoreData.xcdatamodel; sourceTree = "<group>"; };
+		63093E782979888C00D02D67 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		63093E7A2979967700D02D67 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		63093E7C2979B56100D02D67 /* WebViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewerController.swift; sourceTree = "<group>"; };
+		633B75E7298B677E00C48FA0 /* BuyNftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyNftController.swift; sourceTree = "<group>"; };
+		633B75E9298B683D00C48FA0 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		633DBC49299091E900E0C5CE /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		634943CE29888A100059139C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		634C69A7296686D800F57355 /* ProfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
+		634C69AE2966BF7000F57355 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		634C69B02966BF9700F57355 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
+		634C69B42966BFE600F57355 /* FavoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteController.swift; sourceTree = "<group>"; };
+		6379F9B4297FFAB5003FF525 /* Collector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collector.swift; sourceTree = "<group>"; };
+		6379F9B6297FFB0D003FF525 /* Nft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nft.swift; sourceTree = "<group>"; };
+		63926B8929657F1A005D2378 /* BrowserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserController.swift; sourceTree = "<group>"; };
+		63A7101D2980677000B4B9B5 /* NftViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftViewCell.swift; sourceTree = "<group>"; };
+		63D75C04295304E6008F28F0 /* WatchChainIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchChainIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63D75C07295304E6008F28F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63D75C09295304E6008F28F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		63D75C0E295304E6008F28F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63D75C11295304E6008F28F0 /* WatchChainIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WatchChainIOS.xcdatamodel; sourceTree = "<group>"; };
+		63D75C13295304E7008F28F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63D75C16295304E7008F28F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63D75C18295304E7008F28F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63D75C1F29530A74008F28F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63D75C2929530D82008F28F0 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		63D75C2C29530FC7008F28F0 /* RegisterUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserRequest.swift; sourceTree = "<group>"; };
+		63D75C2E29532B07008F28F0 /* LoginUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
+		63D75C30295340AC008F28F0 /* giphyImg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphyImg.gif; sourceTree = "<group>"; };
+		8BE3DF53CCECB493D7F8CACE /* Pods-WatchChainIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchChainIOS.release.xcconfig"; path = "Target Support Files/Pods-WatchChainIOS/Pods-WatchChainIOS.release.xcconfig"; sourceTree = "<group>"; };
+		B91B92B82925E0387CCC60A9 /* Pods-WatchChainIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchChainIOS.debug.xcconfig"; path = "Target Support Files/Pods-WatchChainIOS/Pods-WatchChainIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D3C638A6FC385A45B34CEDC0 /* Pods_WatchChainIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchChainIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63D75C01295304E6008F28F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634C69AD2966B65200F57355 /* GoogleSignInSwift in Frameworks */,
+				63D75C2329530C53008F28F0 /* FirebaseAuth in Frameworks */,
+				634C69AB2966B65200F57355 /* GoogleSignIn in Frameworks */,
+				63D75C2529530C53008F28F0 /* FirebaseFirestore in Frameworks */,
+				63D75C2729530C53008F28F0 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6304455F29630B1D00AD6DD7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63715E3E2990F4F500F7DBFF /* Login+Register */,
+				6307DCB52989D3860028BA52 /* AddNft */,
+				63926B8929657F1A005D2378 /* BrowserController.swift */,
+				634C69A7296686D800F57355 /* ProfilController.swift */,
+				634C69B42966BFE600F57355 /* FavoriteController.swift */,
+				6307DCB32989C8560028BA52 /* CreatorController.swift */,
+				633B75E7298B677E00C48FA0 /* BuyNftController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6306C79C2971620E00357A11 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6306C79D2971627900357A11 /* BrowserNftAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6307DCB52989D3860028BA52 /* AddNft */ = {
+			isa = PBXGroup;
+			children = (
+				6307DCB62989D3B00028BA52 /* MyNftViewController.swift */,
+				6307DCB82989D3CC0028BA52 /* AddNftViewController.swift */,
+			);
+			path = AddNft;
+			sourceTree = "<group>";
+		};
+		633DBC48299091A700E0C5CE /* AnimatedImages */ = {
+			isa = PBXGroup;
+			children = (
+				63D75C30295340AC008F28F0 /* giphyImg.gif */,
+				633DBC49299091E900E0C5CE /* Background.swift */,
+			);
+			path = AnimatedImages;
+			sourceTree = "<group>";
+		};
+		63715E3D2990F07B00F7DBFF /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				63093E7C2979B56100D02D67 /* WebViewerController.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		63715E3E2990F4F500F7DBFF /* Login+Register */ = {
+			isa = PBXGroup;
+			children = (
+				6304456029630B4500AD6DD7 /* LoginController.swift */,
+				634C69AE2966BF7000F57355 /* RegisterController.swift */,
+				634C69B02966BF9700F57355 /* ForgotPasswordController.swift */,
+			);
+			path = "Login+Register";
+			sourceTree = "<group>";
+		};
+		63A7101A2980673100B4B9B5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				63A7101D2980677000B4B9B5 /* NftViewCell.swift */,
+				634943CE29888A100059139C /* CollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		63D75BFB295304E6008F28F0 = {
+			isa = PBXGroup;
+			children = (
+				63D75C06295304E6008F28F0 /* WatchChainIOS */,
+				63D75C05295304E6008F28F0 /* Products */,
+				7052E385B8472DD86EAB900D /* Pods */,
+				FFD53A1DC3DC8DB8D217BEDD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63D75C05295304E6008F28F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63D75C04295304E6008F28F0 /* WatchChainIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63D75C06295304E6008F28F0 /* WatchChainIOS */ = {
+			isa = PBXGroup;
+			children = (
+				63A7101A2980673100B4B9B5 /* Cell */,
+				63D75C2929530D82008F28F0 /* AuthService.swift */,
+				63093E782979888C00D02D67 /* AlertManager.swift */,
+				633B75E9298B683D00C48FA0 /* Validator.swift */,
+				6306C79C2971620E00357A11 /* API */,
+				6304455F29630B1D00AD6DD7 /* Controllers */,
+				63D75C2B29530F5C008F28F0 /* Models */,
+				63D75C07295304E6008F28F0 /* AppDelegate.swift */,
+				63D75C09295304E6008F28F0 /* SceneDelegate.swift */,
+				63D75C1E29530A46008F28F0 /* Supporting */,
+				633DBC48299091A700E0C5CE /* AnimatedImages */,
+				63715E3D2990F07B00F7DBFF /* Web */,
+				63D75C0D295304E6008F28F0 /* Main.storyboard */,
+				63D75C13295304E7008F28F0 /* Assets.xcassets */,
+				63D75C15295304E7008F28F0 /* LaunchScreen.storyboard */,
+				63D75C18295304E7008F28F0 /* Info.plist */,
+				63D75C10295304E6008F28F0 /* WatchChainIOS.xcdatamodeld */,
+				6307DCBA2989E3AF0028BA52 /* AddNftCoreData.xcdatamodeld */,
+			);
+			path = WatchChainIOS;
+			sourceTree = "<group>";
+		};
+		63D75C1E29530A46008F28F0 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				63D75C1F29530A74008F28F0 /* GoogleService-Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		63D75C2B29530F5C008F28F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63D75C2C29530FC7008F28F0 /* RegisterUserRequest.swift */,
+				63D75C2E29532B07008F28F0 /* LoginUserRequest.swift */,
+				63093E7A2979967700D02D67 /* User.swift */,
+				6379F9B4297FFAB5003FF525 /* Collector.swift */,
+				6379F9B6297FFB0D003FF525 /* Nft.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7052E385B8472DD86EAB900D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B91B92B82925E0387CCC60A9 /* Pods-WatchChainIOS.debug.xcconfig */,
+				8BE3DF53CCECB493D7F8CACE /* Pods-WatchChainIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FFD53A1DC3DC8DB8D217BEDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3C638A6FC385A45B34CEDC0 /* Pods_WatchChainIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63D75C03295304E6008F28F0 /* WatchChainIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63D75C1B295304E8008F28F0 /* Build configuration list for PBXNativeTarget "WatchChainIOS" */;
+			buildPhases = (
+				6620F534915EFD645100E223 /* [CP] Check Pods Manifest.lock */,
+				63D75C00295304E6008F28F0 /* Sources */,
+				63D75C01295304E6008F28F0 /* Frameworks */,
+				63D75C02295304E6008F28F0 /* Resources */,
+				79BA041793D79DC2105BEE8A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatchChainIOS;
+			packageProductDependencies = (
+				63D75C2229530C53008F28F0 /* FirebaseAuth */,
+				63D75C2429530C53008F28F0 /* FirebaseFirestore */,
+				63D75C2629530C53008F28F0 /* FirebaseStorage */,
+				634C69AA2966B65200F57355 /* GoogleSignIn */,
+				634C69AC2966B65200F57355 /* GoogleSignInSwift */,
+			);
+			productName = WatchChainIOS;
+			productReference = 63D75C04295304E6008F28F0 /* WatchChainIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63D75BFC295304E6008F28F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					63D75C03295304E6008F28F0 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 63D75BFF295304E6008F28F0 /* Build configuration list for PBXProject "WatchChainIOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63D75BFB295304E6008F28F0;
+			packageReferences = (
+				63D75C2129530C53008F28F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				634C69A92966B65200F57355 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 63D75C05295304E6008F28F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63D75C03295304E6008F28F0 /* WatchChainIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63D75C02295304E6008F28F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D75C17295304E7008F28F0 /* LaunchScreen.storyboard in Resources */,
+				63D75C2029530A74008F28F0 /* GoogleService-Info.plist in Resources */,
+				63D75C14295304E7008F28F0 /* Assets.xcassets in Resources */,
+				63D75C31295340AC008F28F0 /* giphyImg.gif in Resources */,
+				63D75C0F295304E6008F28F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6620F534915EFD645100E223 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchChainIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79BA041793D79DC2105BEE8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchChainIOS/Pods-WatchChainIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchChainIOS/Pods-WatchChainIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchChainIOS/Pods-WatchChainIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63D75C00295304E6008F28F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634C69AF2966BF7000F57355 /* RegisterController.swift in Sources */,
+				63D75C08295304E6008F28F0 /* AppDelegate.swift in Sources */,
+				6307DCB42989C8560028BA52 /* CreatorController.swift in Sources */,
+				63093E792979888C00D02D67 /* AlertManager.swift in Sources */,
+				633B75EA298B683D00C48FA0 /* Validator.swift in Sources */,
+				6307DCB72989D3B00028BA52 /* MyNftViewController.swift in Sources */,
+				6306C79E2971627900357A11 /* BrowserNftAPI.swift in Sources */,
+				63093E7B2979967700D02D67 /* User.swift in Sources */,
+				6379F9B5297FFAB5003FF525 /* Collector.swift in Sources */,
+				63D75C2A29530D82008F28F0 /* AuthService.swift in Sources */,
+				6379F9B7297FFB0E003FF525 /* Nft.swift in Sources */,
+				634C69B52966BFE600F57355 /* FavoriteController.swift in Sources */,
+				634C69B12966BF9700F57355 /* ForgotPasswordController.swift in Sources */,
+				6307DCB92989D3CC0028BA52 /* AddNftViewController.swift in Sources */,
+				63D75C2D29530FC7008F28F0 /* RegisterUserRequest.swift in Sources */,
+				63D75C2F29532B07008F28F0 /* LoginUserRequest.swift in Sources */,
+				63A7101E2980677000B4B9B5 /* NftViewCell.swift in Sources */,
+				634C69A8296686D800F57355 /* ProfilController.swift in Sources */,
+				6307DCBC2989E3AF0028BA52 /* AddNftCoreData.xcdatamodeld in Sources */,
+				63093E7D2979B56100D02D67 /* WebViewerController.swift in Sources */,
+				63926B8A29657F1A005D2378 /* BrowserController.swift in Sources */,
+				633B75E8298B677E00C48FA0 /* BuyNftController.swift in Sources */,
+				634943CF29888A100059139C /* CollectionViewCell.swift in Sources */,
+				633DBC4A299091E900E0C5CE /* Background.swift in Sources */,
+				6304456129630B4500AD6DD7 /* LoginController.swift in Sources */,
+				63D75C0A295304E6008F28F0 /* SceneDelegate.swift in Sources */,
+				63D75C12295304E6008F28F0 /* WatchChainIOS.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63D75C0D295304E6008F28F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63D75C0E295304E6008F28F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63D75C15295304E7008F28F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63D75C16295304E7008F28F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63D75C19295304E7008F28F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63D75C1A295304E7008F28F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63D75C1C295304E8008F28F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B91B92B82925E0387CCC60A9 /* Pods-WatchChainIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BVK37J4S5Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WatchChainIOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchChain;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.ak.WatchChainIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63D75C1D295304E8008F28F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BE3DF53CCECB493D7F8CACE /* Pods-WatchChainIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BVK37J4S5Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WatchChainIOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchChain;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.ak.WatchChainIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63D75BFF295304E6008F28F0 /* Build configuration list for PBXProject "WatchChainIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63D75C19295304E7008F28F0 /* Debug */,
+				63D75C1A295304E7008F28F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63D75C1B295304E8008F28F0 /* Build configuration list for PBXNativeTarget "WatchChainIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63D75C1C295304E8008F28F0 /* Debug */,
+				63D75C1D295304E8008F28F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		634C69A92966B65200F57355 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		63D75C2129530C53008F28F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		634C69AA2966B65200F57355 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 634C69A92966B65200F57355 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		634C69AC2966B65200F57355 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 634C69A92966B65200F57355 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		63D75C2229530C53008F28F0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63D75C2129530C53008F28F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		63D75C2429530C53008F28F0 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63D75C2129530C53008F28F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		63D75C2629530C53008F28F0 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63D75C2129530C53008F28F0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		6307DCBA2989E3AF0028BA52 /* AddNftCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6307DCBB2989E3AF0028BA52 /* AddNftCoreData.xcdatamodel */,
+			);
+			currentVersion = 6307DCBB2989E3AF0028BA52 /* AddNftCoreData.xcdatamodel */;
+			path = AddNftCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		63D75C10295304E6008F28F0 /* WatchChainIOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				63D75C11295304E6008F28F0 /* WatchChainIOS.xcdatamodel */,
+			);
+			currentVersion = 63D75C11295304E6008F28F0 /* WatchChainIOS.xcdatamodel */;
+			path = WatchChainIOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 63D75BFC295304E6008F28F0 /* Project object */;
+}
