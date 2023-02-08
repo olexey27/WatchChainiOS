@@ -19,13 +19,15 @@ class CreatorController: UIViewController {
     
     let apiClient = APIClient()
     
+    var selectCollections: NftCollection?
     var collector: Collector?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.allowsSelection = false
+        collectionView.allowsSelection = true
         
         collectorName.text = collector?.collectorName
         collectionName.text = collector?.collectionName
@@ -34,18 +36,23 @@ class CreatorController: UIViewController {
             DispatchQueue.main.async {
                 self.titelImgView.image = image
             }
-            
         }
+        
         self.apiClient.downloadImage(imageUrl: URL(string: collector!.collectorLogo)!) { image in
             DispatchQueue.main.async {
                 self.logoImg.image = image
             }
-            
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "buyNftSeque" {
+            let destinationView = segue.destination as! BuyNftController
+            destinationView.collection = selectCollections
         }
     }
 }
 
-extension CreatorController: UICollectionViewDataSource {
+extension CreatorController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -58,7 +65,14 @@ extension CreatorController: UICollectionViewDataSource {
         
         let nft = collector?.collection[indexPath.row]
         cell.nftName.text = nft?.nftName
-        //cell.price.text = nft?.nftPrice.encode(to: Encoder()
+        switch nft?.nftPrice {
+                case .double(let x):
+                    cell.price.text = x.description
+                case .string(let x):
+                    cell.price.text = x
+                default:
+                    break
+                }
         
         self.apiClient.downloadImage(imageUrl: URL(string: nft!.nftImage)!) { image in
             DispatchQueue.main.async {
@@ -67,6 +81,9 @@ extension CreatorController: UICollectionViewDataSource {
         }
         return cell
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectCollections = collector?.collection[indexPath.row]
+        performSegue(withIdentifier: "buyNftSeque", sender: self)
+    }
     
 }

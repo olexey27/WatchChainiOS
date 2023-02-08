@@ -55,7 +55,7 @@ extension BrowserController: UICollectionViewDataSource, UICollectionViewDelegat
         
         
         guard let product = collectors?[indexPath.row] else {
-            print("hallo")
+            
             return cell
         }
         
