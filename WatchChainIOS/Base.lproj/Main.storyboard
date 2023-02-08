@@ -414,6 +414,10 @@
                                                 <outlet property="delegate" destination="QLx-R0-UuB" id="WXP-WI-HG7"/>
                                             </connections>
                                         </collectionView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="browser" translatesAutoresizingMaskIntoConstraints="NO" id="BVz-eO-C1d">
+                                            <rect key="frame" x="130" y="40" width="130" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                 </view>
                                 <blurEffect style="regular"/>
@@ -519,7 +523,7 @@
                         <outlet property="titelPic" destination="F5v-P1-U1P" id="lDe-pB-CIp"/>
                         <outlet property="walletButton" destination="Fah-60-ar5" id="AsV-TZ-gdQ"/>
                         <segue destination="bX3-FD-Wjg" kind="presentation" identifier="logoutSeque" modalPresentationStyle="fullScreen" id="SQy-aU-2vs"/>
-                        <segue destination="qGc-TZ-1S7" kind="presentation" id="ssk-H2-Prs"/>
+                        <segue destination="qGc-TZ-1S7" kind="showDetail" id="ssk-H2-Prs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3oS-BF-8Q9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -742,6 +746,10 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="favorite" translatesAutoresizingMaskIntoConstraints="NO" id="0jb-bd-ptW">
+                                <rect key="frame" x="130" y="40" width="130" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="afj-Tm-7al"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1148,10 +1156,12 @@
         <image name="Etherium" width="512" height="512"/>
         <image name="addNft" width="674" height="440"/>
         <image name="apple.logo" catalog="system" width="105" height="128"/>
+        <image name="browser" width="2701" height="512"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
         <image name="creator" width="584" height="120"/>
         <image name="ethereum" width="1024" height="1024"/>
+        <image name="favorite" width="2150" height="512"/>
         <image name="giphyImg.gif" width="480" height="480"/>
         <image name="google" width="20" height="20"/>
         <image name="logoohnenamen" width="227" height="195"/>

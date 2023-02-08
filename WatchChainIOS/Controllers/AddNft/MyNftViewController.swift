@@ -10,8 +10,6 @@ import CoreData
 
 class MyNftViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    //@IBOutlet var addButton: UIButton!
-    
     var nameArray = [String]()
     var idArray = [UUID]()
     var sourceName = ""

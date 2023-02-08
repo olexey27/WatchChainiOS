@@ -74,7 +74,6 @@ class AddNftViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
         
     @IBAction func saveButton(_ sender: Any) {
-            
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let saveData = NSEntityDescription.insertNewObject(forEntityName: "Collection", into: context)
@@ -82,7 +81,7 @@ class AddNftViewController: UIViewController, UIImagePickerControllerDelegate, U
         saveData.setValue(nameTextField.text!, forKey: "name")
         saveData.setValue(collectionTextField.text!, forKey: "collection")
         if let year = Int(yearTextField.text!) {
-            saveData.setValue(year, forKey: "year")
+            saveData.setValue(year, forKey: "price")
         }
             
         let imagePress = imageView.image?.jpegData(compressionQuality: 0.5)
