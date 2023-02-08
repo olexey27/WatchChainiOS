@@ -16,6 +16,9 @@
 		63093E792979888C00D02D67 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63093E782979888C00D02D67 /* AlertManager.swift */; };
 		63093E7B2979967700D02D67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63093E7A2979967700D02D67 /* User.swift */; };
 		63093E7D2979B56100D02D67 /* WebViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63093E7C2979B56100D02D67 /* WebViewerController.swift */; };
+		6314A12E2994180C00D0B353 /* moshed2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6314A12D2994180C00D0B353 /* moshed2.gif */; };
+		6314A130299419C300D0B353 /* moshed1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6314A12F299419C300D0B353 /* moshed1.gif */; };
+		6314A132299424FD00D0B353 /* WalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314A131299424FD00D0B353 /* WalletController.swift */; };
 		633B75E8298B677E00C48FA0 /* BuyNftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B75E7298B677E00C48FA0 /* BuyNftController.swift */; };
 		633B75EA298B683D00C48FA0 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B75E9298B683D00C48FA0 /* Validator.swift */; };
 		633DBC4A299091E900E0C5CE /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633DBC49299091E900E0C5CE /* Background.swift */; };
@@ -48,6 +51,9 @@
 		63093E782979888C00D02D67 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		63093E7A2979967700D02D67 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		63093E7C2979B56100D02D67 /* WebViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewerController.swift; sourceTree = "<group>"; };
+		6314A12D2994180C00D0B353 /* moshed2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = moshed2.gif; sourceTree = "<group>"; };
+		6314A12F299419C300D0B353 /* moshed1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = moshed1.gif; sourceTree = "<group>"; };
+		6314A131299424FD00D0B353 /* WalletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletController.swift; sourceTree = "<group>"; };
 		633B75E7298B677E00C48FA0 /* BuyNftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyNftController.swift; sourceTree = "<group>"; };
 		633B75E9298B683D00C48FA0 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		633DBC49299091E900E0C5CE /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
@@ -93,6 +99,7 @@
 				634C69B42966BFE600F57355 /* FavoriteController.swift */,
 				6307DCB32989C8560028BA52 /* CreatorController.swift */,
 				633B75E7298B677E00C48FA0 /* BuyNftController.swift */,
+				6314A131299424FD00D0B353 /* WalletController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -118,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				63D75C30295340AC008F28F0 /* giphyImg.gif */,
+				6314A12F299419C300D0B353 /* moshed1.gif */,
+				6314A12D2994180C00D0B353 /* moshed2.gif */,
 				633DBC49299091E900E0C5CE /* Background.swift */,
 			);
 			path = AnimatedImages;
@@ -268,9 +277,11 @@
 			files = (
 				63D75C17295304E7008F28F0 /* LaunchScreen.storyboard in Resources */,
 				63D75C2029530A74008F28F0 /* GoogleService-Info.plist in Resources */,
+				6314A130299419C300D0B353 /* moshed1.gif in Resources */,
 				63D75C14295304E7008F28F0 /* Assets.xcassets in Resources */,
 				63D75C31295340AC008F28F0 /* giphyImg.gif in Resources */,
 				63D75C0F295304E6008F28F0 /* Main.storyboard in Resources */,
+				6314A12E2994180C00D0B353 /* moshed2.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +315,7 @@
 				633DBC4A299091E900E0C5CE /* Background.swift in Sources */,
 				6304456129630B4500AD6DD7 /* LoginController.swift in Sources */,
 				63D75C0A295304E6008F28F0 /* SceneDelegate.swift in Sources */,
+				6314A132299424FD00D0B353 /* WalletController.swift in Sources */,
 				63D75C12295304E6008F28F0 /* WatchChainIOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

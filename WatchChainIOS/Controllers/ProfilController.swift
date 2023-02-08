@@ -25,6 +25,9 @@ class ProfilController: UIViewController {
         nameLabel.text = "Alexey"
         emailLabel.text = "alexey27@gmail.com"
         
+        profilePic.loadGif(name: "moshed1")
+        titelPic.loadGif(name: "moshed2")
+        
     }
     
     @IBAction func logoutPressed() {
