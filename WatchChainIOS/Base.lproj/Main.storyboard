@@ -546,7 +546,7 @@
                                 <rect key="frame" x="16" y="46.666666666666657" width="40" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.left" catalog="system">
-                                    <color key="baseBackgroundColor" systemColor="linkColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="backwardPressed:" destination="Xxz-4v-tKh" eventType="touchUpInside" id="91b-zq-4L5"/>
@@ -556,7 +556,7 @@
                                 <rect key="frame" x="64" y="46.666666666666657" width="40" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.right" catalog="system">
-                                    <color key="baseBackgroundColor" systemColor="linkColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="forwardPressed:" destination="Xxz-4v-tKh" eventType="touchUpInside" id="kAl-ic-77j"/>
@@ -880,6 +880,80 @@
             </objects>
             <point key="canvasLocation" x="-729.23076923076917" y="2280.5687203791467"/>
         </scene>
+        <!--Open Sea Controller-->
+        <scene sceneID="RfW-r9-Tn8">
+            <objects>
+                <viewController id="f2f-Pq-kL8" customClass="OpenSeaController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IQz-ug-2t8">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jn-0L-s2Y">
+                                <rect key="frame" x="16" y="46.666666666666657" width="40" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="chevron.left" catalog="system">
+                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backwardPressed:" destination="f2f-Pq-kL8" eventType="touchUpInside" id="XRY-YL-Tsb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHJ-jj-tIb">
+                                <rect key="frame" x="64" y="46.666666666666657" width="40" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="chevron.right" catalog="system">
+                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="forwardPresses:" destination="f2f-Pq-kL8" eventType="touchUpInside" id="xit-gY-3mU"/>
+                                </connections>
+                            </button>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="iz8-Wp-1UN">
+                                <rect key="frame" x="104" y="42" width="270" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="GX6-iy-PFa"/>
+                                    <constraint firstAttribute="height" constant="44" id="ypi-Aj-l0g"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="f2f-Pq-kL8" id="eil-cA-KEY"/>
+                                </connections>
+                            </searchBar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfz-lx-IGs">
+                                <rect key="frame" x="0.0" y="86" width="390" height="701"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YbR-5r-NOC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iz8-Wp-1UN" firstAttribute="leading" secondItem="kHJ-jj-tIb" secondAttribute="trailing" id="CeR-Qx-1Gb"/>
+                            <constraint firstAttribute="bottom" secondItem="Dfz-lx-IGs" secondAttribute="bottom" id="DCo-TQ-xzN"/>
+                            <constraint firstItem="iz8-Wp-1UN" firstAttribute="trailing" secondItem="IQz-ug-2t8" secondAttribute="trailingMargin" id="LWc-5b-w8f"/>
+                            <constraint firstItem="5Jn-0L-s2Y" firstAttribute="leading" secondItem="IQz-ug-2t8" secondAttribute="leadingMargin" id="M1u-EV-GMx"/>
+                            <constraint firstItem="Dfz-lx-IGs" firstAttribute="leading" secondItem="YbR-5r-NOC" secondAttribute="leading" id="OMB-RC-e6E"/>
+                            <constraint firstItem="Dfz-lx-IGs" firstAttribute="trailing" secondItem="YbR-5r-NOC" secondAttribute="trailing" id="ck5-e5-dLx"/>
+                            <constraint firstItem="iz8-Wp-1UN" firstAttribute="centerY" secondItem="5Jn-0L-s2Y" secondAttribute="centerY" id="nYf-Cr-Qw4"/>
+                            <constraint firstItem="iz8-Wp-1UN" firstAttribute="centerY" secondItem="kHJ-jj-tIb" secondAttribute="centerY" id="sPe-zb-LFf"/>
+                            <constraint firstItem="Dfz-lx-IGs" firstAttribute="top" secondItem="iz8-Wp-1UN" secondAttribute="bottom" id="vve-Sv-ynW"/>
+                            <constraint firstItem="iz8-Wp-1UN" firstAttribute="top" secondItem="IQz-ug-2t8" secondAttribute="topMargin" constant="-5" id="xDM-rj-RwL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="5Jn-0L-s2Y" id="uey-iO-0oL"/>
+                        <outlet property="forwardButton" destination="kHJ-jj-tIb" id="AXW-BD-Y1o"/>
+                        <outlet property="searchBar" destination="iz8-Wp-1UN" id="JLC-vU-KJH"/>
+                        <outlet property="webView" destination="Dfz-lx-IGs" id="jqI-7b-g8t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lBz-Bk-v6G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1592.3076923076922" y="3000.7109004739336"/>
+        </scene>
         <!--Buy Nft Controller-->
         <scene sceneID="WF3-eH-bJC">
             <objects>
@@ -888,6 +962,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="giphyImg.gif" translatesAutoresizingMaskIntoConstraints="NO" id="yhU-6c-z8X">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6l-hb-edn">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Qa1-k3-Yky">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nft" translatesAutoresizingMaskIntoConstraints="NO" id="7nS-bN-RgJ">
                                 <rect key="frame" x="130" y="47" width="130" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -929,6 +1016,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="35"/>
                                     <color key="baseBackgroundColor" red="0.0" green="1" blue="0.32725772380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="f2f-Pq-kL8" kind="showDetail" id="vhy-5z-qHA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skW-VZ-Cgg">
                                 <rect key="frame" x="312" y="701" width="62" height="48"/>
@@ -944,6 +1034,7 @@
                     </view>
                     <navigationItem key="navigationItem" style="editor" id="V71-Xm-QWC"/>
                     <connections>
+                        <outlet property="backgroundImg" destination="yhU-6c-z8X" id="qa5-mx-PdC"/>
                         <outlet property="nftName" destination="Pyf-ub-8MR" id="dap-9V-siS"/>
                         <outlet property="nftPrice" destination="ouG-dt-oNV" id="2vp-h3-Iyl"/>
                         <outlet property="nftView" destination="613-m5-xQp" id="8K2-Ii-KYp"/>
@@ -1085,6 +1176,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

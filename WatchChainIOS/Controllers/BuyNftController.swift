@@ -13,12 +13,16 @@ class BuyNftController: UIViewController {
     @IBOutlet weak var nftName: UILabel!
     @IBOutlet weak var nftPrice: UILabel!
     
+    @IBOutlet weak var backgroundImg: UIImageView!
+    
     let apiClient = APIClient()
     
     var collection: NftCollection?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backgroundImg.loadGif(name: "giphyImg")
         
         nftName.text = collection?.nftName
         
@@ -34,6 +38,6 @@ class BuyNftController: UIViewController {
                     nftPrice.text = x
                 default:
                     break
-                }
+        }
     }
 }
