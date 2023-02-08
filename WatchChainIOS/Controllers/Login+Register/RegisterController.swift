@@ -12,99 +12,87 @@ class RegisterController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var repeatPasswordField: UITextField!
     
     @IBOutlet weak var googleSignUpButton: UIButton!
     @IBOutlet weak var appleSignUpButton: UIButton!
     
     @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet weak var alreadyAccountButton: UIButton!
     
-    private let termsTextView: UITextView = {
-        let attributedString = NSMutableAttributedString(string: "By creating an account, you agree to our Terms & Conditions and you acknowledge that you have read our Privacy Policy.")
-        
-        attributedString.addAttribute(.link, value: "terms://termsAndConditions", range: (attributedString.string as NSString).range(of: "Terms & Conditions"))
-        
-        attributedString.addAttribute(.link, value: "privacy://privacyPolicy", range: (attributedString.string as NSString).range(of: "Privacy Policy"))
-        
-        let tv = UITextView()
-        tv.linkTextAttributes = [.foregroundColor: UIColor.systemBlue]
-        tv.backgroundColor = .clear
-        tv.attributedText = attributedString
-        tv.textColor = .label
-        tv.isSelectable = true
-        tv.isEditable = false
-        tv.delaysContentTouches = false
-        tv.isScrollEnabled = false
-        return tv
-    }()
+    @IBOutlet weak var backgroundImg: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backgroundImg.loadGif(name: "giphyImg")
+        
+        usernameField.delegate = self
+        emailField.delegate = self
+        passwordField.delegate = self
+        passwordField.isSecureTextEntry = true
+        repeatPasswordField.delegate = self
+        repeatPasswordField.isSecureTextEntry = true
+        signUpButton.isEnabled = false
+        keyboardDissmissable()
+        
+        self.emailField.keyboardType = .emailAddress
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-    
-    @IBAction func didTapGoogleSignIn(_ sender: Any) {
-    }
-    
-    
-    
-    @IBAction func didTapAppleSignIn(_ sender: Any) {
-    }
-    
-    
-    @IBAction func alreadyAccountPressed(_ sender: Any) {
-        let vc = LoginController()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    // MARK: - Selector
-    @IBAction func didTapSignUp(_ sender: Any) {
-        let registerUserRequest = RegisterUserRequest(
-            username: self.usernameField.text ?? "",
-            email: self.emailField.text ?? "",
-            password: self.passwordField.text ?? "")
-        
-        // Username check
-        if !Validator.isValidUsername(for: registerUserRequest.username) {
-            AlertManager.showInvalidUsernameAlert(on: self)
-            return
-        }
-        
-        // Email check
-        if !Validator.isValidEmail(with: registerUserRequest.email) {
-            AlertManager.showInvalidEmailAlert(on: self)
-            return
-        }
-        
-        // Password check
-        if !Validator.isPasswordValid(for: registerUserRequest.password) {
-            AlertManager.showInvalidPasswordAlert(on: self)
-            return
-        }
-        
-        AuthService.shared.registerUser(with: registerUserRequest) { [weak self]
-            wasRegistered, error in
-            guard let self = self else { return }
-
-            if let error = error {
-                AlertManager.showRegisterationErrorAlert(on: self, with: error)
-                return
-            }
-            
-            if wasRegistered {
-                if let sceneDelegate = self.view.window?.windowScene?.delegate
-                    as? SceneDelegate {
-                    sceneDelegate.checkAuthentication()
-                }
-            } else {
-                AlertManager.showRegisterationErrorAlert(on: self)
+    // KEYBOARD OVERLAPS VIEW
+    @objc func keyBoardWillShow(notification: NSNotification) {
+        if self.view.frame.origin.y == 0 && (repeatPasswordField.isFirstResponder) {
+            if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+                self.view.frame.origin.y -= keyboardSize.height
             }
         }
     }
+    @objc func keyBoardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
     
-    @IBAction func didTapSignIn(_ sender: Any) {
-        self.navigationController?.popToRootViewController(animated: true)
+    // DISMISS KEYBOARD OUTSIDE
+    @objc func dismissKeyboardTouchOutside() {
+        self.view.endEditing(true)
+    }
+    
+    func keyboardDissmissable() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboardTouchOutside))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    
+    /*@IBAction func didTapGoogleSignUp(_ sender: Any) {
+    }
+    
+    
+    
+    @IBAction func didTapAppleSignUp(_ sender: Any) {
+    }*/
+    
+    
+    @IBAction func didTapSignUp() {
+        let name = usernameField.text ?? ""
+        let email = emailField.text ?? ""
+        let password = passwordField.text ?? ""
+        let repeatpassword = repeatPasswordField.text ?? ""
+        _ = User(name: name, email: email, password: password, repeatpassword: repeatpassword)
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func textEditingChange() {
+        if usernameField.text == "" || emailField.text == "" || passwordField.text == "" || repeatPasswordField.text == "" {
+            print("Not all fields are filled out!!!")
+            signUpButton.isEnabled = false
+        } else {
+            signUpButton.isEnabled = true
+        }
     }
     
 }

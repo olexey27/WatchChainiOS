@@ -11,86 +11,46 @@ class LoginController: UIViewController {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    
     @IBOutlet weak var signinButton: UIButton!
-    @IBOutlet weak var newUserButton: UIButton!
+    
     @IBOutlet weak var appleSignInButton: UIButton!
     @IBOutlet weak var googleSignInButton: UIButton!
-    @IBOutlet weak var forgotPasswordButton: UIButton!
     
+    @IBOutlet weak var backgroundImg: UIImageView!
+    
+    var isValidLogin = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.isHidden = true
+        
+        backgroundImg.loadGif(name: "giphyImg")
+        
+        signinButton.isEnabled = false
+        emailField.delegate = self
+        passwordField.delegate = self
+        passwordField.isSecureTextEntry = true
     }
     
     
     @IBAction func signinPressed(_ sender: Any) {
-        let loginRequest = LoginUserRequest(email: self.emailField.text ?? "",
-                                            password: self.passwordField.text ?? ""
-        )
-        
-        // Email check
-        if !Validator.isValidEmail(with: loginRequest.email) {
-            AlertManager.showInvalidEmailAlert(on: self)
-            return
-        }
-        
-        // Password check
-        if !Validator.isPasswordValid(for: loginRequest.password) {
-            AlertManager.showInvalidPasswordAlert(on: self)
-            return
-        }
-        
-        AuthService.shared.signIn(with: loginRequest) { error in
-            if let error = error {
-                AlertManager.showSignInErrorAlert(on: self, with: error)
-                return
-            }
-            
-            if let sceneDelegate = self.view.window?.windowScene?.delegate as? SceneDelegate {
-                sceneDelegate.checkAuthentication()
-            }
+        if(isValidLogin) {
+            performSegue(withIdentifier: "signInLandingSeque", sender: self)
+        } else {
+            let alert = UIAlertController(title: "Login faild!", message: "Try again!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Reenter", style: .cancel, handler: { _ in
+                self.emailField.text = ""
+                self.passwordField.text = ""
+                self.signinButton.isEnabled = false
+                alert.dismiss(animated: true)
+            }))
+            present(alert, animated: true)
         }
     }
     
     
-    // MARK: - Selectors
-    @IBAction func didTapSignIn(_ sender: Any) {
-        let loginRegquest = LoginUserRequest(
-            email: self.emailField.text ?? "",
-            password: self.passwordField.text ?? "")
-        
-        // Email check
-        if !Validator.isValidEmail(with: loginRegquest.email) {
-            AlertManager.showInvalidEmailAlert(on: self)
-            return
-        }
-        
-        // Password check
-        if !Validator.isPasswordValid(for: loginRegquest.password) {
-            AlertManager.showInvalidPasswordAlert(on: self)
-            return
-        }
-        
-        AuthService.shared.signIn(with: loginRegquest) { error in
-            if let error = error {
-                AlertManager.showSignInErrorAlert(on: self, with: error)
-                return
-            }
-            
-            if let sceneDelegate = self.view.window?.windowScene?.delegate as? SceneDelegate {
-                sceneDelegate.checkAuthentication()
-            }
-        }
-    }
-    
-    @IBAction func didTapNewUser(_ sender: Any) {
-        let vc = RegisterController()
-        self.navigationController?.pushViewController(vc, animated: true)
+    @IBAction func registerPressed() {
+        performSegue(withIdentifier: "registerLandingSeque", sender: self)
     }
     
     
@@ -102,11 +62,23 @@ class LoginController: UIViewController {
     
     @IBAction func appleSignInPressed(_ sender: Any) {
     }
+}
+
+extension LoginController: UITextFieldDelegate {
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
     
-    
-    @IBAction func didTapForgotPassword(_ sender: Any) {
-        let vc = ForgotPasswordController()
-        self.navigationController?.pushViewController(vc, animated: true)
+    @IBAction func onTextChanged() {
+        if(emailField.text?.count ?? 0 > 0 && passwordField.text?.count ?? 0 > 0) {
+            signinButton.isEnabled = true
+            if(emailField.text == "a@gmail.com" && passwordField.text == "Zd") {
+                isValidLogin = true
+            } else {
+                isValidLogin = false
+            }
+        }
     }
 }

@@ -5,4 +5,11 @@
 //  Created by Alexej K on 05.01.23.
 //
 
-import Foundation
+import UIKit
+
+class FavoriteController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}

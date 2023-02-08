@@ -13,18 +13,21 @@ class BrowserController: UIViewController {
     
     let apiClient = APIClient()
     
-    var collectors: Response?
+    var selectedCollector: Collector?
+    var collectors: [Collector]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //collectionView.dataSource = self
-        //collectionView.allowsSelection = false
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.allowsSelection = true
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
         apiClient.downloadNftInfo { response in
+            print(response)
             self.collectors = response
     
             
@@ -33,22 +36,26 @@ class BrowserController: UIViewController {
             }
         }
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "nftSeque" {
+            let destinationView = segue.destination as! CreatorController
+            destinationView.collector = selectedCollector
+        }
+    }
 }
-extension BrowserController: UICollectionViewDataSource {
+extension BrowserController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
-            return 1
-        } else {
-            return collectors?.collectors.count ?? 0
-        }
+        
+        return collectors?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         
         
-        guard let product = collectors?.collectors[indexPath.row] else {
+        guard let product = collectors?[indexPath.row] else {
+            print("hallo")
             return cell
         }
         
@@ -77,5 +84,9 @@ extension BrowserController: UICollectionViewDataSource {
             }
         }
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedCollector = collectors?[indexPath.row]
+        performSegue(withIdentifier: "nftSeque", sender: self)
     }
 }

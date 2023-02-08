@@ -8,7 +8,8 @@
 import Foundation
 
 struct User {
-    let username: String
+    let name: String
     let email: String
-    let userUID: String
+    let password: String
+    var repeatpassword: String
 }

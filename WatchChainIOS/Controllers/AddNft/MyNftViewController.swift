@@ -10,6 +10,8 @@ import CoreData
 
 class MyNftViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    //@IBOutlet var addButton: UIButton!
+    
     var nameArray = [String]()
     var idArray = [UUID]()
     var sourceName = ""
@@ -90,6 +92,7 @@ class MyNftViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let context = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Collection")
@@ -116,5 +119,8 @@ class MyNftViewController: UIViewController, UITableViewDelegate, UITableViewDat
             }
         } catch {
         }
+    }
+    @IBAction func addButton() {
+        performSegue(withIdentifier: "toAddNftView", sender: self)
     }
 }
