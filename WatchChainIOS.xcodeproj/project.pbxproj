@@ -20,6 +20,10 @@
 		6314A130299419C300D0B353 /* moshed1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6314A12F299419C300D0B353 /* moshed1.gif */; };
 		6314A132299424FD00D0B353 /* WalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314A131299424FD00D0B353 /* WalletController.swift */; };
 		6314A1352994508A00D0B353 /* OpenSeaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314A1342994508A00D0B353 /* OpenSeaController.swift */; };
+		6314A13729946F6C00D0B353 /* ProfileEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314A13629946F6C00D0B353 /* ProfileEditorController.swift */; };
+		6314A13A2994727A00D0B353 /* datepicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314A1392994727A00D0B353 /* datepicker.swift */; };
+		6314A13C299472AE00D0B353 /* viewPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314A13B299472AE00D0B353 /* viewPicker.swift */; };
+		6314A13E2994748400D0B353 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314A13D2994748400D0B353 /* Extension.swift */; };
 		633B75E8298B677E00C48FA0 /* BuyNftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B75E7298B677E00C48FA0 /* BuyNftController.swift */; };
 		633B75EA298B683D00C48FA0 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B75E9298B683D00C48FA0 /* Validator.swift */; };
 		633DBC4A299091E900E0C5CE /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633DBC49299091E900E0C5CE /* Background.swift */; };
@@ -34,7 +38,6 @@
 		63D75C08295304E6008F28F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D75C07295304E6008F28F0 /* AppDelegate.swift */; };
 		63D75C0A295304E6008F28F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D75C09295304E6008F28F0 /* SceneDelegate.swift */; };
 		63D75C0F295304E6008F28F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D75C0D295304E6008F28F0 /* Main.storyboard */; };
-		63D75C12295304E6008F28F0 /* WatchChainIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63D75C10295304E6008F28F0 /* WatchChainIOS.xcdatamodeld */; };
 		63D75C14295304E7008F28F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D75C13295304E7008F28F0 /* Assets.xcassets */; };
 		63D75C17295304E7008F28F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D75C15295304E7008F28F0 /* LaunchScreen.storyboard */; };
 		63D75C2029530A74008F28F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63D75C1F29530A74008F28F0 /* GoogleService-Info.plist */; };
@@ -56,6 +59,10 @@
 		6314A12F299419C300D0B353 /* moshed1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = moshed1.gif; sourceTree = "<group>"; };
 		6314A131299424FD00D0B353 /* WalletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletController.swift; sourceTree = "<group>"; };
 		6314A1342994508A00D0B353 /* OpenSeaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaController.swift; sourceTree = "<group>"; };
+		6314A13629946F6C00D0B353 /* ProfileEditorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorController.swift; sourceTree = "<group>"; };
+		6314A1392994727A00D0B353 /* datepicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datepicker.swift; sourceTree = "<group>"; };
+		6314A13B299472AE00D0B353 /* viewPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewPicker.swift; sourceTree = "<group>"; };
+		6314A13D2994748400D0B353 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		633B75E7298B677E00C48FA0 /* BuyNftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyNftController.swift; sourceTree = "<group>"; };
 		633B75E9298B683D00C48FA0 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		633DBC49299091E900E0C5CE /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
@@ -71,7 +78,6 @@
 		63D75C07295304E6008F28F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D75C09295304E6008F28F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		63D75C0E295304E6008F28F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		63D75C11295304E6008F28F0 /* WatchChainIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WatchChainIOS.xcdatamodel; sourceTree = "<group>"; };
 		63D75C13295304E7008F28F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63D75C16295304E7008F28F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63D75C18295304E7008F28F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 		6304455F29630B1D00AD6DD7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				633DBC48299091A700E0C5CE /* AnimatedImages */,
 				6314A1332994505500D0B353 /* Web */,
 				63715E3E2990F4F500F7DBFF /* Login+Register */,
 				6307DCB52989D3860028BA52 /* AddNft */,
@@ -102,6 +109,7 @@
 				634C69B42966BFE600F57355 /* FavoriteController.swift */,
 				6307DCB32989C8560028BA52 /* CreatorController.swift */,
 				633B75E7298B677E00C48FA0 /* BuyNftController.swift */,
+				6314A13629946F6C00D0B353 /* ProfileEditorController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -128,8 +136,19 @@
 			children = (
 				6314A131299424FD00D0B353 /* WalletController.swift */,
 				6314A1342994508A00D0B353 /* OpenSeaController.swift */,
+				63093E7C2979B56100D02D67 /* WebViewerController.swift */,
 			);
 			path = Web;
+			sourceTree = "<group>";
+		};
+		6314A1382994725000D0B353 /* DatePicker + ViewPicker */ = {
+			isa = PBXGroup;
+			children = (
+				6314A1392994727A00D0B353 /* datepicker.swift */,
+				6314A13B299472AE00D0B353 /* viewPicker.swift */,
+				6314A13D2994748400D0B353 /* Extension.swift */,
+			);
+			path = "DatePicker + ViewPicker";
 			sourceTree = "<group>";
 		};
 		633DBC48299091A700E0C5CE /* AnimatedImages */ = {
@@ -141,14 +160,6 @@
 				633DBC49299091E900E0C5CE /* Background.swift */,
 			);
 			path = AnimatedImages;
-			sourceTree = "<group>";
-		};
-		63715E3D2990F07B00F7DBFF /* Web */ = {
-			isa = PBXGroup;
-			children = (
-				63093E7C2979B56100D02D67 /* WebViewerController.swift */,
-			);
-			path = Web;
 			sourceTree = "<group>";
 		};
 		63715E3E2990F4F500F7DBFF /* Login+Register */ = {
@@ -189,6 +200,7 @@
 		63D75C06295304E6008F28F0 /* WatchChainIOS */ = {
 			isa = PBXGroup;
 			children = (
+				6314A1382994725000D0B353 /* DatePicker + ViewPicker */,
 				63A7101A2980673100B4B9B5 /* Cell */,
 				63093E782979888C00D02D67 /* AlertManager.swift */,
 				633B75E9298B683D00C48FA0 /* Validator.swift */,
@@ -198,13 +210,10 @@
 				63D75C07295304E6008F28F0 /* AppDelegate.swift */,
 				63D75C09295304E6008F28F0 /* SceneDelegate.swift */,
 				63D75C1E29530A46008F28F0 /* Supporting */,
-				633DBC48299091A700E0C5CE /* AnimatedImages */,
-				63715E3D2990F07B00F7DBFF /* Web */,
 				63D75C0D295304E6008F28F0 /* Main.storyboard */,
 				63D75C13295304E7008F28F0 /* Assets.xcassets */,
 				63D75C15295304E7008F28F0 /* LaunchScreen.storyboard */,
 				63D75C18295304E7008F28F0 /* Info.plist */,
-				63D75C10295304E6008F28F0 /* WatchChainIOS.xcdatamodeld */,
 				6307DCBA2989E3AF0028BA52 /* AddNftCoreData.xcdatamodeld */,
 			);
 			path = WatchChainIOS;
@@ -318,17 +327,20 @@
 				6307DCB92989D3CC0028BA52 /* AddNftViewController.swift in Sources */,
 				63A7101E2980677000B4B9B5 /* NftViewCell.swift in Sources */,
 				634C69A8296686D800F57355 /* ProfilController.swift in Sources */,
+				6314A13E2994748400D0B353 /* Extension.swift in Sources */,
 				6307DCBC2989E3AF0028BA52 /* AddNftCoreData.xcdatamodeld in Sources */,
 				63093E7D2979B56100D02D67 /* WebViewerController.swift in Sources */,
 				63926B8A29657F1A005D2378 /* BrowserController.swift in Sources */,
 				633B75E8298B677E00C48FA0 /* BuyNftController.swift in Sources */,
 				6314A1352994508A00D0B353 /* OpenSeaController.swift in Sources */,
+				6314A13729946F6C00D0B353 /* ProfileEditorController.swift in Sources */,
 				634943CF29888A100059139C /* CollectionViewCell.swift in Sources */,
+				6314A13C299472AE00D0B353 /* viewPicker.swift in Sources */,
 				633DBC4A299091E900E0C5CE /* Background.swift in Sources */,
+				6314A13A2994727A00D0B353 /* datepicker.swift in Sources */,
 				6304456129630B4500AD6DD7 /* LoginController.swift in Sources */,
 				63D75C0A295304E6008F28F0 /* SceneDelegate.swift in Sources */,
 				6314A132299424FD00D0B353 /* WalletController.swift in Sources */,
-				63D75C12295304E6008F28F0 /* WatchChainIOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,16 +569,6 @@
 			);
 			currentVersion = 6307DCBB2989E3AF0028BA52 /* AddNftCoreData.xcdatamodel */;
 			path = AddNftCoreData.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		63D75C10295304E6008F28F0 /* WatchChainIOS.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				63D75C11295304E6008F28F0 /* WatchChainIOS.xcdatamodel */,
-			);
-			currentVersion = 63D75C11295304E6008F28F0 /* WatchChainIOS.xcdatamodel */;
-			path = WatchChainIOS.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

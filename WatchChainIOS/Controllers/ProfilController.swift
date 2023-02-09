@@ -16,10 +16,9 @@ class ProfilController: UIViewController {
     @IBOutlet var sendButton: UIButton!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
-    
     @IBOutlet weak var editProfileButton: UIButton!
-    
     @IBOutlet weak var walletButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLabel.text = "Alexey"

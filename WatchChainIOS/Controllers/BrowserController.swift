@@ -29,13 +29,13 @@ class BrowserController: UIViewController {
         apiClient.downloadNftInfo { response in
             print(response)
             self.collectors = response
-    
             
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
             }
         }
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "nftSeque" {
             let destinationView = segue.destination as! CreatorController
@@ -43,19 +43,16 @@ class BrowserController: UIViewController {
         }
     }
 }
+
 extension BrowserController: UICollectionViewDataSource, UICollectionViewDelegate {
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         return collectors?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         
-        
         guard let product = collectors?[indexPath.row] else {
-            
             return cell
         }
         
@@ -67,11 +64,13 @@ extension BrowserController: UICollectionViewDataSource, UICollectionViewDelegat
                 cell.nftView1.image = image
             }
         }
+        
         self.apiClient.downloadImage(imageUrl: URL(string: product.collection[1].nftImage)!) { image in
             DispatchQueue.main.async {
                 cell.nftView2.image = image
             }
         }
+        
         self.apiClient.downloadImage(imageUrl: URL(string: product.collection[2].nftImage)!) { image in
             DispatchQueue.main.async {
                 cell.nftView3.image = image

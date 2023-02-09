@@ -12,7 +12,6 @@ class BuyNftController: UIViewController {
     @IBOutlet weak var nftView: UIImageView!
     @IBOutlet weak var nftName: UILabel!
     @IBOutlet weak var nftPrice: UILabel!
-    
     @IBOutlet weak var backgroundImg: UIImageView!
     
     let apiClient = APIClient()

@@ -11,12 +11,9 @@ class LoginController: UIViewController {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
     @IBOutlet weak var signinButton: UIButton!
-    
     @IBOutlet weak var appleSignInButton: UIButton!
     @IBOutlet weak var googleSignInButton: UIButton!
-    
     @IBOutlet weak var backgroundImg: UIImageView!
     
     var isValidLogin = false
@@ -31,7 +28,6 @@ class LoginController: UIViewController {
         passwordField.delegate = self
         passwordField.isSecureTextEntry = true
     }
-    
     
     @IBAction func signinPressed(_ sender: Any) {
         if(isValidLogin) {
@@ -48,24 +44,20 @@ class LoginController: UIViewController {
         }
     }
     
-    
     @IBAction func registerPressed() {
         performSegue(withIdentifier: "registerLandingSeque", sender: self)
     }
     
-    
-    
-    @IBAction func googleSignInPressed(_ sender: Any) {
+    /*@IBAction func googleSignInPressed(_ sender: Any) {
     }
     
     
     
     @IBAction func appleSignInPressed(_ sender: Any) {
-    }
+    }*/
 }
 
 extension LoginController: UITextFieldDelegate {
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return true
@@ -74,7 +66,7 @@ extension LoginController: UITextFieldDelegate {
     @IBAction func onTextChanged() {
         if(emailField.text?.count ?? 0 > 0 && passwordField.text?.count ?? 0 > 0) {
             signinButton.isEnabled = true
-            if(emailField.text == "a@gmail.com" && passwordField.text == "Zd") {
+            if(emailField.text == "alexey27@gmail.com" && passwordField.text == "ZuWild") {
                 isValidLogin = true
             } else {
                 isValidLogin = false

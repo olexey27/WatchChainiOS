@@ -17,7 +17,7 @@ class OpenSeaController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string: "https://opensea.io")!
+        let url = URL(string: "https://opensea.io/de-DE/collection/clonex")!
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
         webView.navigationDelegate = self

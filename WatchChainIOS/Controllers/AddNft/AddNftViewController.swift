@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class AddNftViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddNftViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
@@ -21,15 +21,21 @@ class AddNftViewController: UIViewController, UIImagePickerControllerDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nameTextField.delegate = self
+        collectionTextField.delegate = self
+        yearTextField.delegate = self
+        keyboardDissmissable()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
         if targetName != "" {
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
             let context = appDelegate.persistentContainer.viewContext
             let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Collection")
-            
             let idString = targetId?.uuidString
             fetchRequest.predicate = NSPredicate(format: "id = %@", idString!)
             fetchRequest.returnsObjectsAsFaults = false
-            
             do {
                 let results = try context.fetch(fetchRequest)
                 for result in results as! [NSManagedObject] {
@@ -66,6 +72,32 @@ class AddNftViewController: UIViewController, UIImagePickerControllerDelegate, U
         picker.allowsEditing = true
         present(picker, animated: true, completion: nil)
     }
+    
+    // KEYBOARD OVERLAPS VIEW
+    @objc func keyBoardWillShow(notification: NSNotification) {
+        if self.view.frame.origin.y == 0 && (yearTextField.isFirstResponder) {
+            if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    
+    @objc func keyBoardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+    // DISMISS KEYBOARD OUTSIDE
+    @objc func dismissKeyboardTouchOutside() {
+        self.view.endEditing(true)
+    }
+    
+    func keyboardDissmissable() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboardTouchOutside))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
         
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info:
                                    [UIImagePickerController.InfoKey : Any]) {
@@ -81,20 +113,17 @@ class AddNftViewController: UIViewController, UIImagePickerControllerDelegate, U
         saveData.setValue(nameTextField.text!, forKey: "name")
         saveData.setValue(collectionTextField.text!, forKey: "collection")
         if let year = Int(yearTextField.text!) {
-            saveData.setValue(year, forKey: "price")
+            saveData.setValue(year, forKey: "year")
         }
-            
         let imagePress = imageView.image?.jpegData(compressionQuality: 0.5)
         saveData.setValue(imagePress, forKey: "image")
         saveData.setValue(UUID(), forKey: "id")
-            
         do {
             try context.save()
             print("Succes")
         } catch {
             print("Error")
         }
-            
         NotificationCenter.default.post(name: NSNotification.Name.init(rawValue: "newData"), object: nil)
         self.navigationController?.popViewController(animated: true)
     }

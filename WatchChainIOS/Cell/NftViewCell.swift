@@ -14,7 +14,7 @@ class NftViewCell: UICollectionViewCell {
     @IBOutlet weak var collectorName: UILabel!
     
     @IBOutlet weak var collectionName: UILabel!
-    
+
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nftName: UILabel!
     @IBOutlet weak var price: UILabel!

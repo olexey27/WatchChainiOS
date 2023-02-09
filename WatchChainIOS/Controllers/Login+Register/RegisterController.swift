@@ -50,6 +50,7 @@ class RegisterController: UIViewController {
             }
         }
     }
+    
     @objc func keyBoardWillHide(notification: NSNotification) {
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
@@ -67,15 +68,11 @@ class RegisterController: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
-    
     /*@IBAction func didTapGoogleSignUp(_ sender: Any) {
     }
     
-    
-    
     @IBAction func didTapAppleSignUp(_ sender: Any) {
     }*/
-    
     
     @IBAction func didTapSignUp() {
         let name = usernameField.text ?? ""

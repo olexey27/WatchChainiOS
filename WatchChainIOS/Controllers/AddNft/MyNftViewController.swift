@@ -26,7 +26,6 @@ class MyNftViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     @IBOutlet weak var tableViewNft: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,7 +42,6 @@ class MyNftViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     @objc func getData() {
-        
         self.nameArray.removeAll(keepingCapacity: true)
         self.idArray.removeAll(keepingCapacity: true)
         
@@ -51,11 +49,9 @@ class MyNftViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let context = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Collection")
         fetchRequest.returnsObjectsAsFaults = false
-        
         do {
             let results = try context.fetch(fetchRequest)
             for result in results as! [NSManagedObject] {
-                
                 if let name = result.value(forKey:"name") as? String {
                     self.nameArray.append(name)
                 }
@@ -88,17 +84,13 @@ class MyNftViewController: UIViewController, UITableViewDelegate, UITableViewDat
         performSegue(withIdentifier: "toAddNftView", sender: nil)
     }
     
-    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let context = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Collection")
-        
         let idString = idArray[indexPath.row].uuidString
         fetchRequest.predicate = NSPredicate(format: "id = %@", idString)
         fetchRequest.returnsObjectsAsFaults = false
-        
         do {
             let results = try context.fetch(fetchRequest)
             for result in results as! [NSManagedObject] {
@@ -107,11 +99,9 @@ class MyNftViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     nameArray.remove(at: indexPath.row)
                     idArray.remove(at: indexPath.row)
                     self.tableViewNft.reloadData()
-                    
                     do {
                         try context.save()
                     } catch {
-                        
                     }
                 }
             }

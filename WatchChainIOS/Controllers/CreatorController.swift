@@ -13,7 +13,6 @@ class CreatorController: UIViewController {
     @IBOutlet weak var titelImgView: UIImageView!
     @IBOutlet weak var collectorName: UILabel!
     @IBOutlet weak var logoImg: UIImageView!
-    
     @IBOutlet weak var collectionName: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -44,6 +43,7 @@ class CreatorController: UIViewController {
             }
         }
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "buyNftSeque" {
             let destinationView = segue.destination as! BuyNftController
@@ -53,16 +53,12 @@ class CreatorController: UIViewController {
 }
 
 extension CreatorController: UICollectionViewDataSource, UICollectionViewDelegate {
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         return collector?.collection.count ?? 0
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! NftViewCell
-        
         let nft = collector?.collection[indexPath.row]
         cell.nftName.text = nft?.nftName
         switch nft?.nftPrice {
@@ -81,6 +77,7 @@ extension CreatorController: UICollectionViewDataSource, UICollectionViewDelegat
         }
         return cell
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectCollections = collector?.collection[indexPath.row]
         performSegue(withIdentifier: "buyNftSeque", sender: self)
