@@ -8,15 +8,18 @@
 import UIKit
 import CoreData
 
-class AddNftViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+class AddNftViewController: UIViewController, UINavigationControllerDelegate, UITextFieldDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var collectionTextField: UITextField!
     @IBOutlet weak var yearTextField: UITextField!
+    @IBOutlet weak var cryptoTF: UITextField! //PickerView
     
     var targetName = ""
     var targetId: UUID?
+    let cryptoPicker = UIPickerView()
+    let cryptoArray = ["Bitcoin", "Ethereum", "Solana", "DogeCoin"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +28,10 @@ class AddNftViewController: UIViewController, UIImagePickerControllerDelegate, U
         collectionTextField.delegate = self
         yearTextField.delegate = self
         keyboardDissmissable()
+        
+        cryptoPicker.dataSource = self
+        cryptoPicker.delegate = self
+        pickCrypto()
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)

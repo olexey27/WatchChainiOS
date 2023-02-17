@@ -23,3 +23,18 @@ extension ProfileEditorController {
         gender.inputView = genderPicker
     }
 }
+
+extension AddNftViewController {
+    @objc func endEditing() {
+        self.view.endEditing(true)
+    }
+    func pickCrypto() {
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(endEditing))
+        toolbar.setItems([doneButton], animated: true)
+        
+        cryptoTF.inputAccessoryView = toolbar
+        cryptoTF.inputView = cryptoPicker
+    }
+}

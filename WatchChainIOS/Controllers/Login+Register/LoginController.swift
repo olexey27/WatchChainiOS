@@ -12,8 +12,6 @@ class LoginController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var signinButton: UIButton!
-    @IBOutlet weak var appleSignInButton: UIButton!
-    @IBOutlet weak var googleSignInButton: UIButton!
     @IBOutlet weak var backgroundImg: UIImageView!
     
     var isValidLogin = false
@@ -47,14 +45,6 @@ class LoginController: UIViewController {
     @IBAction func registerPressed() {
         performSegue(withIdentifier: "registerLandingSeque", sender: self)
     }
-    
-    /*@IBAction func googleSignInPressed(_ sender: Any) {
-    }
-    
-    
-    
-    @IBAction func appleSignInPressed(_ sender: Any) {
-    }*/
 }
 
 extension LoginController: UITextFieldDelegate {

@@ -39,4 +39,21 @@ class BuyNftController: UIViewController {
                     break
         }
     }
+    
+    
+    @IBAction func addFavorite(_ sender: Any) {
+        let add = UIAlertController(title: "Add To Favorite", message: "Are you sure you want to add this to your Favorite?", preferredStyle: .alert)
+        
+        //add.addTextField()
+        
+        /*add.addAction(UIAlertAction(title: "YES", style: .default, handler: {(_) in
+            let text = alert.textFields?.first?.text
+         if(!text!.isEmpty){
+         self.IN Favoriten wird es gespeichert.text! += "\(text!)\n"}}))*/
+        
+        add.addAction(UIAlertAction(title: "Yes", style: .cancel))
+        add.addAction(UIAlertAction(title: "No", style: .default))
+        
+        present(add, animated: true)
+    }
 }

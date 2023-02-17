@@ -29,9 +29,9 @@ class MyNftViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationBar.topItem?
+        /*navigationController?.navigationBar.topItem?
             .rightBarButtonItem = UIBarButtonItem(barButtonSystemItem:
-                                                    UIBarButtonItem.SystemItem.add, target: self, action: #selector(addItem))
+                                                    UIBarButtonItem.SystemItem.add, target: self, action: #selector(addNft))*/
         tableViewNft.delegate = self
         tableViewNft.dataSource = self
         getData()
@@ -63,10 +63,9 @@ class MyNftViewController: UIViewController, UITableViewDelegate, UITableViewDat
         } catch {
         }
     }
-    
-    @objc func addItem() {
-        sourceName = ""
-        performSegue(withIdentifier: "toAddNftView", sender: nil)
+         @IBAction func addNft(_ sender: Any) {
+             sourceName = ""
+            performSegue(withIdentifier: "toAddNftView", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

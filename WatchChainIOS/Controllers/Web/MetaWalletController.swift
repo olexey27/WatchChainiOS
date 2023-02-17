@@ -1,5 +1,5 @@
 //
-//  WalletController.swift
+//  MetaWalletController.swift
 //  WatchChainIOS
 //
 //  Created by Alexej K on 08.02.23.
@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class WalletController: UIViewController {
+class MetaWalletController: UIViewController {
     
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -37,13 +37,13 @@ class WalletController: UIViewController {
     }
 }
 
-extension WalletController: WKNavigationDelegate {
+extension MetaWalletController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         self.searchBar.text = webView.url!.absoluteString
     }
 }
 
-extension WalletController: UISearchBarDelegate {
+extension MetaWalletController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         let searchText = searchBar.text!
         searchBar.resignFirstResponder()

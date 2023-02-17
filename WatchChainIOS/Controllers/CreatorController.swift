@@ -15,6 +15,7 @@ class CreatorController: UIViewController {
     @IBOutlet weak var logoImg: UIImageView!
     @IBOutlet weak var collectionName: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var background: UIImageView!
     
     let apiClient = APIClient()
     
@@ -23,6 +24,8 @@ class CreatorController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        background.loadGif(name: "giphyImg")
         
         collectionView.delegate = self
         collectionView.dataSource = self
