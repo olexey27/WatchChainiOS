@@ -45,6 +45,11 @@ class LoginController: UIViewController {
     @IBAction func registerPressed() {
         performSegue(withIdentifier: "registerLandingSeque", sender: self)
     }
+    
+    
+    @IBAction func guestPressed() {
+        performSegue(withIdentifier: "signInLandingSeque", sender: self)
+    }
 }
 
 extension LoginController: UITextFieldDelegate {
