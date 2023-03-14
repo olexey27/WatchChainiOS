@@ -21,8 +21,8 @@ class ProfilController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = "(Guest Name)"
-        emailLabel.text = "(Guest E-Mail)"
+        nameLabel.text = "(Guest sgsffdhdName)"
+        emailLabel.text = "(afdfadfGuest E-Mail)"
         
         profilePic.loadGif(name: "moshed1")
         titelPic.loadGif(name: "moshed2")
