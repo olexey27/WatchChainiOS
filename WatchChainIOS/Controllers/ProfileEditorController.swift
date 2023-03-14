@@ -29,8 +29,8 @@ class ProfileEditorController: UIViewController, UIPickerViewDataSource {
         titleImg.loadGif(name: "moshed2")
         logoImg.loadGif(name: "moshed1")
         
-        userName.text = "Alexey"
-        emailField.text = "alexey27@gmail.com"
+        //userName.text = "Alexey"
+        //emailField.text = "alexey27@gmail.com"
         
         datePicker.datePickerMode = .date
         datePicker.preferredDatePickerStyle = .wheels
