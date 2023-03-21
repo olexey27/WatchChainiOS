@@ -429,9 +429,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" image="paperplane.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="share:" destination="vdt-Da-ghs" eventType="touchUpInside" id="Gtc-5Z-AOS"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GM6-cq-keS">
                                 <rect key="frame" x="29" y="455" width="333" height="40"/>
@@ -496,7 +493,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3oS-BF-8Q9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="vdt-Da-ghs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2783.0769230769229" y="1517.7725118483411"/>
         </scene>
