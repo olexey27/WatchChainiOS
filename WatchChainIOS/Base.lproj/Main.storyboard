@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bX3-FD-Wjg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bX3-FD-Wjg">
     <device id="retina6_0" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -14,7 +15,7 @@
             <objects>
                 <navigationController modalPresentationStyle="fullScreen" id="bX3-FD-Wjg" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pzn-BM-0oF">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -24,6 +25,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdf-MZ-0Fq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-727" y="5"/>
+        </scene>
+        <!--Qr Code Controller-->
+        <scene sceneID="6rf-Kd-www">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="hfz-kM-xw7" customClass="QrCodeController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tdB-aG-hEa">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1B-kB-qeU">
+                                <rect key="frame" x="94.333333333333329" y="401.33333333333331" width="201.66666666666669" height="41.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start scanning">
+                                    <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="24"/>
+                                    <color key="baseForegroundColor" systemColor="linkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startScanningPressed:" destination="hfz-kM-xw7" eventType="touchUpInside" id="kw8-tO-Am4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dJN-IW-oXr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b1B-kB-qeU" firstAttribute="centerX" secondItem="tdB-aG-hEa" secondAttribute="centerX" id="DxF-iG-1Fa"/>
+                            <constraint firstItem="b1B-kB-qeU" firstAttribute="centerY" secondItem="tdB-aG-hEa" secondAttribute="centerY" id="Swp-GM-HmO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" style="editor" id="EzP-5m-bkn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbI-Te-OQS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="-738"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -43,6 +77,19 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="llW-Vh-mmF">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1Z-ik-eeT">
+                                            <rect key="frame" x="290" y="660" width="55" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="filled" image="qrcode" catalog="system">
+                                                <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <segue destination="hfz-kM-xw7" kind="show" id="U8L-br-knr"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
                                 </view>
                                 <blurEffect style="regular"/>
                             </visualEffectView>
@@ -125,13 +172,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsV-1S-wFe">
-                                <rect key="frame" x="45" y="655" width="300" height="35"/>
+                                <rect key="frame" x="45" y="660" width="230" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="linkColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Guest">
                                     <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="20"/>
-                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="guestPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="l30-MK-QGu"/>
@@ -148,6 +195,7 @@
                         <outlet property="backgroundImg" destination="wUl-IM-Pb8" id="Nhg-qr-DDA"/>
                         <outlet property="emailField" destination="10U-Rt-kcL" id="aFd-nD-3DM"/>
                         <outlet property="passwordField" destination="D8Y-VN-i8p" id="2Kq-w0-tAi"/>
+                        <outlet property="qrCodeScan" destination="x1Z-ik-eeT" id="X3T-09-xlH"/>
                         <outlet property="signinButton" destination="ycx-gn-1at" id="vna-Ng-zWk"/>
                         <segue destination="jd4-Vi-aiq" kind="show" identifier="registerLandingSeque" id="jMk-ky-6rk"/>
                         <segue destination="rwF-DC-Kgf" kind="presentation" identifier="signInLandingSeque" modalPresentationStyle="fullScreen" id="0hH-G9-N0W"/>
@@ -501,11 +549,11 @@
             <objects>
                 <viewController id="Xxz-4v-tKh" customClass="MetaWalletController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sXJ-lr-mgx">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cz5-Xq-0SY">
-                                <rect key="frame" x="0.0" y="86" width="390" height="701"/>
+                                <rect key="frame" x="0.0" y="39" width="390" height="795"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -513,7 +561,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pl-ZX-5xx">
-                                <rect key="frame" x="16" y="46.666666666666657" width="40" height="35"/>
+                                <rect key="frame" x="16" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.left" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
@@ -523,7 +571,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61y-SW-pCk">
-                                <rect key="frame" x="64" y="46.666666666666657" width="40" height="35"/>
+                                <rect key="frame" x="64" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.right" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
@@ -533,7 +581,7 @@
                                 </connections>
                             </button>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="5dA-tW-qAm">
-                                <rect key="frame" x="104" y="42" width="270" height="44"/>
+                                <rect key="frame" x="104" y="-5" width="270" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="IMz-Xw-XXt"/>
                                     <constraint firstAttribute="width" constant="270" id="VmO-Xt-NpT"/>
@@ -576,7 +624,7 @@
             <objects>
                 <viewController id="qGc-TZ-1S7" customClass="ProfileEditorController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r5Z-vJ-mWw">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n6X-pf-243">
@@ -672,7 +720,7 @@
             <objects>
                 <viewController id="IOF-hs-YTW" customClass="WalletController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4v7-jd-JrH">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9o-S5-A43">
@@ -779,7 +827,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9vA-sc-aow">
-                                <rect key="frame" x="0.0" y="47" width="390" height="648"/>
+                                <rect key="frame" x="0.0" y="83" width="390" height="612"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -908,7 +956,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1Pr-dW-D4e">
-                                <rect key="frame" x="0.0" y="270" width="390" height="491"/>
+                                <rect key="frame" x="0.0" y="270" width="390" height="525"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zb7-i0-TPR">
                                     <size key="itemSize" width="190" height="285"/>
                                     <size key="estimatedItemSize" width="190" height="285"/>
@@ -1019,11 +1067,11 @@
             <objects>
                 <viewController id="f2f-Pq-kL8" customClass="OpenSeaController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IQz-ug-2t8">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jn-0L-s2Y">
-                                <rect key="frame" x="16" y="46.666666666666657" width="40" height="35"/>
+                                <rect key="frame" x="16" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.left" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
@@ -1033,7 +1081,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHJ-jj-tIb">
-                                <rect key="frame" x="64" y="46.666666666666657" width="40" height="35"/>
+                                <rect key="frame" x="64" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.right" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
@@ -1043,7 +1091,7 @@
                                 </connections>
                             </button>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="iz8-Wp-1UN">
-                                <rect key="frame" x="104" y="42" width="270" height="44"/>
+                                <rect key="frame" x="104" y="-5" width="270" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="GX6-iy-PFa"/>
                                     <constraint firstAttribute="height" constant="44" id="ypi-Aj-l0g"/>
@@ -1054,7 +1102,7 @@
                                 </connections>
                             </searchBar>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfz-lx-IGs">
-                                <rect key="frame" x="0.0" y="86" width="390" height="701"/>
+                                <rect key="frame" x="0.0" y="39" width="390" height="795"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -1186,7 +1234,7 @@
             <objects>
                 <viewController id="odD-ca-sZY" customClass="AddNftViewController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ig2-4r-B5d">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="addNft" translatesAutoresizingMaskIntoConstraints="NO" id="wVg-kx-iI8">
@@ -1275,7 +1323,7 @@
                     <tabBarItem key="tabBarItem" title="Browser" image="network" catalog="system" id="p05-v2-Rzc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NFa-tw-YkQ">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1295,11 +1343,11 @@
             <objects>
                 <viewController id="m7j-ji-5Xy" customClass="PhantomWalletController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="snc-ow-EHW">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjU-nl-jz2">
-                                <rect key="frame" x="0.0" y="86" width="390" height="701"/>
+                                <rect key="frame" x="0.0" y="39" width="390" height="795"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -1307,7 +1355,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0w6-2p-1g0">
-                                <rect key="frame" x="16" y="46.666666666666657" width="40" height="35"/>
+                                <rect key="frame" x="16" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.left" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
@@ -1317,7 +1365,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Un7-IK-ppO">
-                                <rect key="frame" x="64" y="46.666666666666657" width="40" height="35"/>
+                                <rect key="frame" x="64" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.right" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
@@ -1327,7 +1375,7 @@
                                 </connections>
                             </button>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lrf-oa-KXq">
-                                <rect key="frame" x="104" y="42" width="270" height="44"/>
+                                <rect key="frame" x="104" y="-5" width="270" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="g1e-NX-rj0"/>
                                     <constraint firstAttribute="height" constant="44" id="wks-1s-xND"/>
@@ -1370,11 +1418,11 @@
             <objects>
                 <viewController id="BDR-Fp-w9T" customClass="CronosWalletController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="riF-SU-N7d">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvQ-cC-9Wc">
-                                <rect key="frame" x="0.0" y="86" width="390" height="701"/>
+                                <rect key="frame" x="0.0" y="39" width="390" height="795"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -1382,7 +1430,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zr2-i2-AN9">
-                                <rect key="frame" x="16" y="46.666666666666657" width="40" height="35"/>
+                                <rect key="frame" x="16" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.left" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
@@ -1392,7 +1440,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7D-Tr-oeX">
-                                <rect key="frame" x="64" y="46.666666666666657" width="40" height="35"/>
+                                <rect key="frame" x="64" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.right" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
@@ -1402,7 +1450,7 @@
                                 </connections>
                             </button>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="KaD-0Y-9Q8">
-                                <rect key="frame" x="104" y="42" width="270" height="44"/>
+                                <rect key="frame" x="104" y="-5" width="270" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="W5p-OU-Ack"/>
                                     <constraint firstAttribute="height" constant="44" id="fPK-ga-FIL"/>
@@ -1445,11 +1493,11 @@
             <objects>
                 <viewController id="x7l-RG-uYL" customClass="OneinchWalletController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bHh-He-qXL">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KDl-FE-byy">
-                                <rect key="frame" x="0.0" y="86" width="390" height="701"/>
+                                <rect key="frame" x="0.0" y="39" width="390" height="795"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -1457,7 +1505,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcE-2l-KQB">
-                                <rect key="frame" x="16" y="46.666666666666657" width="40" height="35"/>
+                                <rect key="frame" x="16" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.left" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
@@ -1467,7 +1515,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2s-YX-y9C">
-                                <rect key="frame" x="64" y="46.666666666666657" width="40" height="35"/>
+                                <rect key="frame" x="64" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.right" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
@@ -1477,7 +1525,7 @@
                                 </connections>
                             </button>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="OA4-wZ-o9D">
-                                <rect key="frame" x="104" y="42" width="270" height="44"/>
+                                <rect key="frame" x="104" y="-5" width="270" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="4kF-hu-VwI"/>
                                     <constraint firstAttribute="height" constant="44" id="JWr-7V-NnO"/>
@@ -1537,6 +1585,7 @@
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="photo.artframe" catalog="system" width="128" height="93"/>
+        <image name="qrcode" catalog="system" width="128" height="114"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="suit.heart" catalog="system" width="128" height="107"/>
         <image name="wallet" width="468" height="132"/>
@@ -1554,9 +1603,6 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

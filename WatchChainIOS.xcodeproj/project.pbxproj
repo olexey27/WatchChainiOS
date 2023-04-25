@@ -37,6 +37,7 @@
 		6379F9B5297FFAB5003FF525 /* Collector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379F9B4297FFAB5003FF525 /* Collector.swift */; };
 		6379F9B7297FFB0E003FF525 /* Nft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379F9B6297FFB0D003FF525 /* Nft.swift */; };
 		63926B8A29657F1A005D2378 /* BrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63926B8929657F1A005D2378 /* BrowserController.swift */; };
+		63979B4D29F868E100EFF2C8 /* QrCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63979B4C29F868E100EFF2C8 /* QrCodeController.swift */; };
 		63A7101E2980677000B4B9B5 /* NftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7101D2980677000B4B9B5 /* NftViewCell.swift */; };
 		63D75C08295304E6008F28F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D75C07295304E6008F28F0 /* AppDelegate.swift */; };
 		63D75C0A295304E6008F28F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D75C09295304E6008F28F0 /* SceneDelegate.swift */; };
@@ -79,6 +80,7 @@
 		6379F9B4297FFAB5003FF525 /* Collector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collector.swift; sourceTree = "<group>"; };
 		6379F9B6297FFB0D003FF525 /* Nft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nft.swift; sourceTree = "<group>"; };
 		63926B8929657F1A005D2378 /* BrowserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserController.swift; sourceTree = "<group>"; };
+		63979B4C29F868E100EFF2C8 /* QrCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeController.swift; sourceTree = "<group>"; };
 		63A7101D2980677000B4B9B5 /* NftViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftViewCell.swift; sourceTree = "<group>"; };
 		63D75C04295304E6008F28F0 /* WatchChainIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchChainIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D75C07295304E6008F28F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				633B75E7298B677E00C48FA0 /* BuyNftController.swift */,
 				6314A13629946F6C00D0B353 /* ProfileEditorController.swift */,
 				636859C5299F206D002BD90F /* WalletController.swift */,
+				63979B4C29F868E100EFF2C8 /* QrCodeController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				636859C6299F206D002BD90F /* WalletController.swift in Sources */,
 				63926B8A29657F1A005D2378 /* BrowserController.swift in Sources */,
 				633B75E8298B677E00C48FA0 /* BuyNftController.swift in Sources */,
+				63979B4D29F868E100EFF2C8 /* QrCodeController.swift in Sources */,
 				6314A1352994508A00D0B353 /* OpenSeaController.swift in Sources */,
 				6314A13729946F6C00D0B353 /* ProfileEditorController.swift in Sources */,
 				634943CF29888A100059139C /* CollectionViewCell.swift in Sources */,
@@ -503,6 +507,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WatchChainIOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchChain;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app would like to use your camera to scan codes and text.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -532,6 +537,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WatchChainIOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchChain;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app would like to use your camera to scan codes and text.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

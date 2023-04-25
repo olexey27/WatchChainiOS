@@ -13,6 +13,7 @@ class LoginController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var signinButton: UIButton!
     @IBOutlet weak var backgroundImg: UIImageView!
+    @IBOutlet weak var qrCodeScan: UIButton!
     
     var isValidLogin = false
     
