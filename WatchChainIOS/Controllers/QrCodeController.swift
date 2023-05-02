@@ -10,6 +10,9 @@ import VisionKit
 
 class QrCodeController: UIViewController {
     
+    @IBOutlet weak var backgroundImg4: UIImageView!
+    
+    
     /// Checks if `isSupported` and `isAvailable`
     var scannerAvailable: Bool {
         DataScannerViewController.isSupported && DataScannerViewController.isAvailable
@@ -17,6 +20,8 @@ class QrCodeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backgroundImg4.loadGif(name: "giphyImg")
     }
     
     @IBAction func startScanningPressed(_ sender: Any) {

@@ -34,30 +34,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1B-kB-qeU">
-                                <rect key="frame" x="94.333333333333329" y="401.33333333333331" width="201.66666666666669" height="41.666666666666686"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start scanning">
-                                    <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="24"/>
-                                    <color key="baseForegroundColor" systemColor="linkColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="startScanningPressed:" destination="hfz-kM-xw7" eventType="touchUpInside" id="kw8-tO-Am4"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giphyImg.gif" translatesAutoresizingMaskIntoConstraints="NO" id="zco-ak-UA0">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZKx-nV-1ad">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QU4-IN-U5S">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1B-kB-qeU">
+                                            <rect key="frame" x="94.333333333333329" y="574.66666666666663" width="201.66666666666669" height="42.666666666666629"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Start scanning">
+                                                <backgroundConfiguration key="background">
+                                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                    <color key="strokeColor" systemColor="systemGreenColor"/>
+                                                </backgroundConfiguration>
+                                                <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="24"/>
+                                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="startScanningPressed:" destination="hfz-kM-xw7" eventType="touchUpInside" id="kw8-tO-Am4"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap the scan button below to begin verifying digital proof of QR code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTC-UY-LzT">
+                                            <rect key="frame" x="29" y="441" width="332" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="qrcode.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XMw-SF-peP">
+                                            <rect key="frame" x="0.0" y="198.33333333333326" width="390" height="214.99999999999994"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="b1B-kB-qeU" firstAttribute="centerY" secondItem="QU4-IN-U5S" secondAttribute="centerY" constant="173.83333333333337" id="IVO-CY-CbF"/>
+                                        <constraint firstItem="b1B-kB-qeU" firstAttribute="centerX" secondItem="QU4-IN-U5S" secondAttribute="centerX" id="muC-ru-3K8"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dJN-IW-oXr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="b1B-kB-qeU" firstAttribute="centerX" secondItem="tdB-aG-hEa" secondAttribute="centerX" id="DxF-iG-1Fa"/>
-                            <constraint firstItem="b1B-kB-qeU" firstAttribute="centerY" secondItem="tdB-aG-hEa" secondAttribute="centerY" id="Swp-GM-HmO"/>
+                            <constraint firstItem="zco-ak-UA0" firstAttribute="top" secondItem="tdB-aG-hEa" secondAttribute="top" id="M6m-DZ-YfT"/>
+                            <constraint firstItem="zco-ak-UA0" firstAttribute="trailing" secondItem="dJN-IW-oXr" secondAttribute="trailing" id="Pex-Vg-I9X"/>
+                            <constraint firstItem="ZKx-nV-1ad" firstAttribute="top" secondItem="tdB-aG-hEa" secondAttribute="top" id="R2B-dS-0g1"/>
+                            <constraint firstItem="zco-ak-UA0" firstAttribute="leading" secondItem="dJN-IW-oXr" secondAttribute="leading" id="XT2-Hg-aG2"/>
+                            <constraint firstAttribute="bottom" secondItem="zco-ak-UA0" secondAttribute="bottom" id="ewn-IW-RNf"/>
+                            <constraint firstItem="ZKx-nV-1ad" firstAttribute="leading" secondItem="dJN-IW-oXr" secondAttribute="leading" id="ta9-8Z-Pei"/>
+                            <constraint firstAttribute="bottom" secondItem="ZKx-nV-1ad" secondAttribute="bottom" id="xNs-2x-gxC"/>
+                            <constraint firstItem="ZKx-nV-1ad" firstAttribute="trailing" secondItem="dJN-IW-oXr" secondAttribute="trailing" id="yxQ-Fp-oQA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" style="editor" id="EzP-5m-bkn"/>
+                    <connections>
+                        <outlet property="backgroundImg4" destination="zco-ak-UA0" id="uEk-JU-QtQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbI-Te-OQS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="127" y="-738"/>
+            <point key="canvasLocation" x="126.15384615384615" y="-738.62559241706163"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -1598,6 +1640,7 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="photo.artframe" catalog="system" width="128" height="93"/>
         <image name="qrcode" catalog="system" width="128" height="114"/>
+        <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="suit.heart" catalog="system" width="128" height="107"/>
         <image name="wallet" width="468" height="132"/>
@@ -1612,6 +1655,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
