@@ -5,6 +5,7 @@
 //  Created by Alexej K on 02.01.23.
 //
 
+import LocalAuthentication
 import UIKit
 
 class LoginController: UIViewController {
@@ -27,6 +28,57 @@ class LoginController: UIViewController {
         passwordField.delegate = self
         passwordField.isSecureTextEntry = true
     }
+    
+    @IBAction func faceId(_ sender: Any) {
+       authenticate()
+    }
+    
+    private func authenticate() {
+        
+        let context = LAContext()
+        
+        var error:NSError? = nil
+        
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            
+            let reason = "explanation for authentication"
+            
+            context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason) {
+                success, authenticationError in
+                
+                if success {
+                    
+                    DispatchQueue.main.async {
+                        //self.alert(with: "Authefication success!!!")
+                        
+                        guard let profileController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfilController") as? ProfilController else {
+                            fatalError()
+                        }
+                        
+                        self.present(profileController, animated: true, completion: nil)
+                        
+                    }
+                } else {
+                    print("Authification failt")
+                }
+            }
+            
+        } else {
+            alert(with: "Authification not available !")
+        }
+    }
+    
+    private func alert(with message: String) {
+        
+        let alert = UIAlertController(title: "ERROR", message: message, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        alert.addAction(okAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
     
     @IBAction func signinPressed(_ sender: Any) {
         if(isValidLogin) {

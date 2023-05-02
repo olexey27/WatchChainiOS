@@ -508,6 +508,7 @@
 				INFOPLIST_FILE = WatchChainIOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchChain;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app would like to use your camera to scan codes and text.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow to continue with face id.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -538,6 +539,7 @@
 				INFOPLIST_FILE = WatchChainIOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchChain;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app would like to use your camera to scan codes and text.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow to continue with face id.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

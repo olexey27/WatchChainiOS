@@ -89,6 +89,17 @@
                                                 <segue destination="hfz-kM-xw7" kind="show" id="U8L-br-knr"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zll-9f-0Gp">
+                                            <rect key="frame" x="220" y="660" width="55" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="filled" image="faceid" catalog="system">
+                                                <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="faceId:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OnM-UE-jkh"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                                 <blurEffect style="regular"/>
@@ -172,7 +183,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsV-1S-wFe">
-                                <rect key="frame" x="45" y="660" width="230" height="35"/>
+                                <rect key="frame" x="45" y="660" width="160" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="linkColor"/>
                                 <state key="normal" title="Button"/>
@@ -452,7 +463,7 @@
         <!--Profile-->
         <scene sceneID="UPE-Iz-qaX">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="f2s-P8-aif" customClass="ProfilController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfilController" modalPresentationStyle="fullScreen" id="f2s-P8-aif" customClass="ProfilController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="frq-5x-ZPZ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1577,6 +1588,7 @@
         <image name="chevron.right" catalog="system" width="97" height="128"/>
         <image name="creator" width="584" height="120"/>
         <image name="ethereum" width="1024" height="1024"/>
+        <image name="faceid" catalog="system" width="128" height="115"/>
         <image name="favorite" width="2150" height="512"/>
         <image name="giphyImg.gif" width="480" height="480"/>
         <image name="logoohnenamen" width="227" height="195"/>
