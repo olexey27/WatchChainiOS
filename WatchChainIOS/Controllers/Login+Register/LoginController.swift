@@ -27,10 +27,17 @@ class LoginController: UIViewController {
         emailField.delegate = self
         passwordField.delegate = self
         passwordField.isSecureTextEntry = true
+        
+        setupButton()
     }
     
-    @IBAction func faceId(_ sender: Any) {
+    func setupButton() {
+        signinButton.layer.cornerRadius = 8
+    }
+    
+    @IBAction func faceId(_ sender: UIButton) {
        authenticate()
+        sender.pulsate()
     }
     
     private func authenticate() {
@@ -79,8 +86,7 @@ class LoginController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    
-    @IBAction func signinPressed(_ sender: Any) {
+    @IBAction func signinPressed(_ sender: UIButton) {
         if(isValidLogin) {
             performSegue(withIdentifier: "signInLandingSeque", sender: self)
         } else {
@@ -93,12 +99,12 @@ class LoginController: UIViewController {
             }))
             present(alert, animated: true)
         }
+        sender.pulsate()
     }
     
     @IBAction func registerPressed() {
         performSegue(withIdentifier: "registerLandingSeque", sender: self)
     }
-    
     
     @IBAction func guestPressed() {
         performSegue(withIdentifier: "signInLandingSeque", sender: self)

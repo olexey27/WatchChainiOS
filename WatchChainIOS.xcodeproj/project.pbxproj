@@ -30,6 +30,7 @@
 		634C69A8296686D800F57355 /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C69A7296686D800F57355 /* ProfilController.swift */; };
 		634C69AF2966BF7000F57355 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C69AE2966BF7000F57355 /* RegisterController.swift */; };
 		634C69B52966BFE600F57355 /* FavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C69B42966BFE600F57355 /* FavoriteController.swift */; };
+		635C7EFC2A01B42A0025BE84 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C7EFB2A01B42A0025BE84 /* UIButtonExtension.swift */; };
 		636859C4299F1BB7002BD90F /* PhantomWalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636859C3299F1BB7002BD90F /* PhantomWalletController.swift */; };
 		636859C6299F206D002BD90F /* WalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636859C5299F206D002BD90F /* WalletController.swift */; };
 		636859C8299F23E5002BD90F /* CronosWalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636859C7299F23E5002BD90F /* CronosWalletController.swift */; };
@@ -73,6 +74,7 @@
 		634C69A7296686D800F57355 /* ProfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
 		634C69AE2966BF7000F57355 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		634C69B42966BFE600F57355 /* FavoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteController.swift; sourceTree = "<group>"; };
+		635C7EFB2A01B42A0025BE84 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		636859C3299F1BB7002BD90F /* PhantomWalletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhantomWalletController.swift; sourceTree = "<group>"; };
 		636859C5299F206D002BD90F /* WalletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletController.swift; sourceTree = "<group>"; };
 		636859C7299F23E5002BD90F /* CronosWalletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronosWalletController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		6304455F29630B1D00AD6DD7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				635C7EFA2A01B4030025BE84 /* AnimatedButtons */,
 				633DBC48299091A700E0C5CE /* AnimatedImages */,
 				6314A1332994505500D0B353 /* Web */,
 				63715E3E2990F4F500F7DBFF /* Login+Register */,
@@ -172,6 +175,14 @@
 				633DBC49299091E900E0C5CE /* Background.swift */,
 			);
 			path = AnimatedImages;
+			sourceTree = "<group>";
+		};
+		635C7EFA2A01B4030025BE84 /* AnimatedButtons */ = {
+			isa = PBXGroup;
+			children = (
+				635C7EFB2A01B42A0025BE84 /* UIButtonExtension.swift */,
+			);
+			path = AnimatedButtons;
 			sourceTree = "<group>";
 		};
 		63715E3E2990F4F500F7DBFF /* Login+Register */ = {
@@ -331,6 +342,7 @@
 				63093E792979888C00D02D67 /* AlertManager.swift in Sources */,
 				633B75EA298B683D00C48FA0 /* Validator.swift in Sources */,
 				6307DCB72989D3B00028BA52 /* MyNftViewController.swift in Sources */,
+				635C7EFC2A01B42A0025BE84 /* UIButtonExtension.swift in Sources */,
 				6306C79E2971627900357A11 /* BrowserNftAPI.swift in Sources */,
 				63093E7B2979967700D02D67 /* User.swift in Sources */,
 				636859CA299F262D002BD90F /* OneinchWalletController.swift in Sources */,

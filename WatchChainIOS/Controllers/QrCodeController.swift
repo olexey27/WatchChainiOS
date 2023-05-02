@@ -11,8 +11,7 @@ import VisionKit
 class QrCodeController: UIViewController {
     
     @IBOutlet weak var backgroundImg4: UIImageView!
-    
-    
+
     /// Checks if `isSupported` and `isAvailable`
     var scannerAvailable: Bool {
         DataScannerViewController.isSupported && DataScannerViewController.isAvailable
@@ -24,7 +23,8 @@ class QrCodeController: UIViewController {
         backgroundImg4.loadGif(name: "giphyImg")
     }
     
-    @IBAction func startScanningPressed(_ sender: Any) {
+    @IBAction func startScanningPressed(_ sender: UIButton) {
+        sender.pulsate()
         guard scannerAvailable == true else {
             print("Error: Scanner is not available for usage. Please check settings.")
             return

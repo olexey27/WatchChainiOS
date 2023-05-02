@@ -20,7 +20,7 @@ class BuyNftController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         backgroundImg.loadGif(name: "giphyImg")
         
         nftName.text = collection?.nftName
@@ -39,7 +39,6 @@ class BuyNftController: UIViewController {
                     break
         }
     }
-    
     
     @IBAction func addFavorite(_ sender: Any) {
         let add = UIAlertController(title: "Add To Favorite", message: "Are you sure you want to add this to your Favorite?", preferredStyle: .alert)
