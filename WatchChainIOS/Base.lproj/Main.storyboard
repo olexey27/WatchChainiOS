@@ -932,7 +932,7 @@
         <!--Favorite-->
         <scene sceneID="87j-hS-qi9">
             <objects>
-                <viewController id="oq0-eP-mgg" sceneMemberID="viewController">
+                <viewController id="oq0-eP-mgg" customClass="FavoriteController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KsM-L2-Bd5">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -940,22 +940,40 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fgE-4x-ly2">
                                 <rect key="frame" x="0.0" y="76" width="390" height="685"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="T2k-qe-Qfe">
-                                    <size key="itemSize" width="390" height="145"/>
+                                    <size key="itemSize" width="190" height="249"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="TmD-XZ-5ag">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="145"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="249"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SNB-iM-XR9">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="145"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="190" height="249"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4pg-Tu-utu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="190" height="209"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUs-Bc-6et">
+                                                    <rect key="frame" x="159" y="8" width="23" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nft Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0h-mo-v4n">
+                                                    <rect key="frame" x="8" y="208" width="174" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="390" height="145"/>
+                                        <size key="customSize" width="190" height="249"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -1633,6 +1651,7 @@
         <image name="faceid" catalog="system" width="128" height="115"/>
         <image name="favorite" width="2150" height="512"/>
         <image name="giphyImg.gif" width="480" height="480"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="logoohnenamen" width="227" height="195"/>
         <image name="network" catalog="system" width="128" height="123"/>
         <image name="nft" width="512" height="265"/>

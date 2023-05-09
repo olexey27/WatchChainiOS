@@ -25,8 +25,8 @@ class ProfilController: UIViewController {
         nameLabel.text = "Guest Name"
         emailLabel.text = "Guest E-Mail"
         
-        profilePic.loadGif(name: "moshed1")
-        titelPic.loadGif(name: "moshed2")
+        profilePic.loadGif(name: "profilegif")
+        titelPic.loadGif(name: "titlegif")
         
     }
     

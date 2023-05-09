@@ -15,8 +15,6 @@
 		6307DCBC2989E3AF0028BA52 /* AddNftCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6307DCBA2989E3AF0028BA52 /* AddNftCoreData.xcdatamodeld */; };
 		63093E792979888C00D02D67 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63093E782979888C00D02D67 /* AlertManager.swift */; };
 		63093E7B2979967700D02D67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63093E7A2979967700D02D67 /* User.swift */; };
-		6314A12E2994180C00D0B353 /* moshed2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6314A12D2994180C00D0B353 /* moshed2.gif */; };
-		6314A130299419C300D0B353 /* moshed1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6314A12F299419C300D0B353 /* moshed1.gif */; };
 		6314A132299424FD00D0B353 /* MetaWalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314A131299424FD00D0B353 /* MetaWalletController.swift */; };
 		6314A1352994508A00D0B353 /* OpenSeaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314A1342994508A00D0B353 /* OpenSeaController.swift */; };
 		6314A13729946F6C00D0B353 /* ProfileEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314A13629946F6C00D0B353 /* ProfileEditorController.swift */; };
@@ -26,6 +24,8 @@
 		633B75E8298B677E00C48FA0 /* BuyNftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B75E7298B677E00C48FA0 /* BuyNftController.swift */; };
 		633B75EA298B683D00C48FA0 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B75E9298B683D00C48FA0 /* Validator.swift */; };
 		633DBC4A299091E900E0C5CE /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633DBC49299091E900E0C5CE /* Background.swift */; };
+		63435A692A0AC28A00AA9545 /* titlegif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 63435A682A0AC28A00AA9545 /* titlegif.gif */; };
+		63435A6B2A0AC29A00AA9545 /* profilegif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 63435A6A2A0AC29A00AA9545 /* profilegif.gif */; };
 		634943CF29888A100059139C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634943CE29888A100059139C /* CollectionViewCell.swift */; };
 		634C69A8296686D800F57355 /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C69A7296686D800F57355 /* ProfilController.swift */; };
 		634C69AF2966BF7000F57355 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C69AE2966BF7000F57355 /* RegisterController.swift */; };
@@ -59,8 +59,6 @@
 		6307DCBB2989E3AF0028BA52 /* AddNftCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AddNftCoreData.xcdatamodel; sourceTree = "<group>"; };
 		63093E782979888C00D02D67 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		63093E7A2979967700D02D67 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		6314A12D2994180C00D0B353 /* moshed2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = moshed2.gif; sourceTree = "<group>"; };
-		6314A12F299419C300D0B353 /* moshed1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = moshed1.gif; sourceTree = "<group>"; };
 		6314A131299424FD00D0B353 /* MetaWalletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaWalletController.swift; sourceTree = "<group>"; };
 		6314A1342994508A00D0B353 /* OpenSeaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaController.swift; sourceTree = "<group>"; };
 		6314A13629946F6C00D0B353 /* ProfileEditorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorController.swift; sourceTree = "<group>"; };
@@ -70,6 +68,8 @@
 		633B75E7298B677E00C48FA0 /* BuyNftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyNftController.swift; sourceTree = "<group>"; };
 		633B75E9298B683D00C48FA0 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		633DBC49299091E900E0C5CE /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		63435A682A0AC28A00AA9545 /* titlegif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = titlegif.gif; sourceTree = "<group>"; };
+		63435A6A2A0AC29A00AA9545 /* profilegif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = profilegif.gif; sourceTree = "<group>"; };
 		634943CE29888A100059139C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		634C69A7296686D800F57355 /* ProfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
 		634C69AE2966BF7000F57355 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
@@ -170,8 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				63D75C30295340AC008F28F0 /* giphyImg.gif */,
-				6314A12F299419C300D0B353 /* moshed1.gif */,
-				6314A12D2994180C00D0B353 /* moshed2.gif */,
+				63435A682A0AC28A00AA9545 /* titlegif.gif */,
+				63435A6A2A0AC29A00AA9545 /* profilegif.gif */,
 				633DBC49299091E900E0C5CE /* Background.swift */,
 			);
 			path = AnimatedImages;
@@ -318,13 +318,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63435A692A0AC28A00AA9545 /* titlegif.gif in Resources */,
 				63D75C17295304E7008F28F0 /* LaunchScreen.storyboard in Resources */,
 				63D75C2029530A74008F28F0 /* GoogleService-Info.plist in Resources */,
-				6314A130299419C300D0B353 /* moshed1.gif in Resources */,
 				63D75C14295304E7008F28F0 /* Assets.xcassets in Resources */,
+				63435A6B2A0AC29A00AA9545 /* profilegif.gif in Resources */,
 				63D75C31295340AC008F28F0 /* giphyImg.gif in Resources */,
 				63D75C0F295304E6008F28F0 /* Main.storyboard in Resources */,
-				6314A12E2994180C00D0B353 /* moshed2.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
