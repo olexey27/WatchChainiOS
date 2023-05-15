@@ -505,7 +505,7 @@
         <!--Profile-->
         <scene sceneID="UPE-Iz-qaX">
             <objects>
-                <viewController storyboardIdentifier="ProfilController" modalPresentationStyle="fullScreen" id="f2s-P8-aif" customClass="ProfilController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="f2s-P8-aif" customClass="ProfilController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="frq-5x-ZPZ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -528,15 +528,20 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gz-Rg-zQx">
                                 <rect key="frame" x="176" y="278" width="51" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.231372565" green="0.50980395079999996" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" image="paperplane.fill" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="filled" image="paperplane.fill" catalog="system">
+                                    <color key="baseBackgroundColor" red="0.231372565" green="0.50980395079999996" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GM6-cq-keS">
                                 <rect key="frame" x="29" y="455" width="333" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Edit Profile">
+                                <buttonConfiguration key="configuration" style="filled" title="Edit Profile">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="editButtonPressed" destination="f2s-P8-aif" eventType="touchUpInside" id="lwb-89-YvP"/>
@@ -545,11 +550,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlA-Gm-Hq4">
                                 <rect key="frame" x="289" y="278" width="85" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Logout">
                                     <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="17"/>
-                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.061276920669999999" blue="0.035066382370000003" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="logoutPressed" destination="f2s-P8-aif" eventType="touchUpInside" id="jcl-cs-Kcj"/>
@@ -565,14 +570,36 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fah-60-ar5">
                                 <rect key="frame" x="29" y="509" width="333" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Wallet">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
-                                    <color key="baseBackgroundColor" red="0.0" green="1" blue="0.32725772380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="IOF-hs-YTW" kind="show" id="eoL-QU-p50"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crypto Marktplace" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCw-RK-uUY">
+                                <rect key="frame" x="29" y="584" width="333" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0X-4j-o80">
+                                <rect key="frame" x="29" y="607" width="333" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.29160833730000002" blue="0.1604674794" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Crypto">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.29160833730000002" blue="0.1604674794" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="cryptoMarkt:" destination="o68-3z-Go9" eventType="touchUpInside" id="UQT-LT-xKl"/>
+                                    <action selector="cryptoMarkt:" destination="f2s-P8-aif" eventType="touchUpInside" id="i4Q-4y-gNt"/>
+                                    <action selector="cryptoMarkt:forEvent:" destination="o68-3z-Go9" eventType="touchUpInside" id="HuI-hK-R81"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -594,6 +621,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3oS-BF-8Q9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="o68-3z-Go9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2783.0769230769229" y="1517.7725118483411"/>
         </scene>
@@ -1381,16 +1409,35 @@
                         <segue destination="gvc-Zq-gT3" kind="relationship" relationship="viewControllers" id="EzB-Ow-dyl"/>
                         <segue destination="tbu-gp-ne4" kind="relationship" relationship="viewControllers" id="Qdv-jr-o32"/>
                         <segue destination="oq0-eP-mgg" kind="relationship" relationship="viewControllers" id="HFc-zR-cKM"/>
+                        <segue destination="Mp5-Yn-KvW" kind="relationship" relationship="viewControllers" id="A3g-0U-rP4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FlJ-50-1RG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="134" y="761"/>
         </scene>
+        <!--Crypto-->
+        <scene sceneID="H0J-AP-T5g">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Mp5-Yn-KvW" customClass="HomeController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bo0-W3-48L">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Qo1-4j-ANo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Crypto" image="bitcoinsign.circle" catalog="system" id="H5c-JS-EJb"/>
+                    <navigationItem key="navigationItem" id="e2h-eu-Ayr"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VlT-JK-IfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1469" y="722"/>
+        </scene>
         <!--Browser-->
         <scene sceneID="vs4-sD-ZIL">
             <objects>
-                <navigationController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" id="gvc-Zq-gT3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Home" wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" id="gvc-Zq-gT3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Browser" image="network" catalog="system" id="p05-v2-Rzc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NFa-tw-YkQ">
@@ -1643,6 +1690,7 @@
         <image name="Phantom" width="512" height="512"/>
         <image name="addNft" width="674" height="440"/>
         <image name="addnfts" width="2263" height="512"/>
+        <image name="bitcoinsign.circle" catalog="system" width="128" height="123"/>
         <image name="browser" width="2701" height="512"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
@@ -1669,6 +1717,9 @@
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="quaternaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17647058823529413" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -1686,9 +1737,6 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

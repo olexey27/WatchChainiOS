@@ -22,8 +22,8 @@ class ProfilController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameLabel.text = "Guest Name"
-        emailLabel.text = "Guest E-Mail"
+        nameLabel.text = "Guest001"
+        emailLabel.text = "Guest@mail.com"
         
         profilePic.loadGif(name: "profilegif")
         titelPic.loadGif(name: "titlegif")
@@ -37,4 +37,8 @@ class ProfilController: UIViewController {
     @IBAction func editButtonPressed() {
         performSegue(withIdentifier: "editProfileSeque", sender: self)
     }
+    
+    @IBAction func cryptoMarkt(_ sender: UIButton) {
+    }
+    
 }
