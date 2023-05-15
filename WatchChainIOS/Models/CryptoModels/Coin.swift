@@ -27,7 +27,7 @@ struct Coin {
 
 extension Coin {
     
-    public func getMockArray() -> [Coin] {
+    public static func getMockArray() -> [Coin] {
         return [
             Coin(id:1, name: "Bitcoin", max_supply: 200, cmc_rank: 1, quote: Quote(CAD: Quote.CAD(price: 50000, market_cap: 1_000_000))),
             Coin(id:2, name: "Ethereum", max_supply: nil, cmc_rank: 2, quote: Quote(CAD: Quote.CAD(price: 2000, market_cap: 500_000))),

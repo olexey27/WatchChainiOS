@@ -398,6 +398,39 @@
             </objects>
             <point key="canvasLocation" x="1001.5384615384615" y="4.9763033175355451"/>
         </scene>
+        <!--Crypto-->
+        <scene sceneID="228-f7-erO">
+            <objects>
+                <navigationController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" id="w1i-0D-Dzd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Crypto" image="bitcoinsign.circle" catalog="system" id="jSm-8S-cpp"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7E8-oD-NEM">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="E8Y-df-cap" kind="relationship" relationship="rootViewController" id="J0p-xe-UwJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHu-jl-TDr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="679"/>
+        </scene>
+        <!--Home Controller-->
+        <scene sceneID="LnU-Y8-1m0">
+            <objects>
+                <viewController id="E8Y-df-cap" customClass="HomeController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pj2-3n-tMn">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Yp3-Jc-gXf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lSE-Vz-Ph7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oyF-X4-i6T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1998" y="688"/>
+        </scene>
         <!--Browser Controller-->
         <scene sceneID="dQT-uf-bzh">
             <objects>
@@ -1409,30 +1442,12 @@
                         <segue destination="gvc-Zq-gT3" kind="relationship" relationship="viewControllers" id="EzB-Ow-dyl"/>
                         <segue destination="tbu-gp-ne4" kind="relationship" relationship="viewControllers" id="Qdv-jr-o32"/>
                         <segue destination="oq0-eP-mgg" kind="relationship" relationship="viewControllers" id="HFc-zR-cKM"/>
-                        <segue destination="Mp5-Yn-KvW" kind="relationship" relationship="viewControllers" id="A3g-0U-rP4"/>
+                        <segue destination="w1i-0D-Dzd" kind="relationship" relationship="viewControllers" id="beJ-Ka-7d2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FlJ-50-1RG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="134" y="761"/>
-        </scene>
-        <!--Crypto-->
-        <scene sceneID="H0J-AP-T5g">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Mp5-Yn-KvW" customClass="HomeController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bo0-W3-48L">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Qo1-4j-ANo"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Crypto" image="bitcoinsign.circle" catalog="system" id="H5c-JS-EJb"/>
-                    <navigationItem key="navigationItem" id="e2h-eu-Ayr"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VlT-JK-IfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1469" y="722"/>
         </scene>
         <!--Browser-->
         <scene sceneID="vs4-sD-ZIL">
