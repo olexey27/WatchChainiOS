@@ -46,6 +46,14 @@ class CoinCell: UITableViewCell {
     public func configure(with coin: Coin) {
         self.coin = coin
         self.coinName.text = coin.name
+        
+        let imageData = try? Data(contentsOf: self.coin.logoURL!)
+        
+        if let imageData = imageData {
+            DispatchQueue.main.async { [ weak self] in
+                self?.coinLogo.image = UIImage(data: imageData)
+            }
+        }
     }
     
     
