@@ -40,6 +40,7 @@
 		6379F9B7297FFB0E003FF525 /* Nft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379F9B6297FFB0D003FF525 /* Nft.swift */; };
 		63926B8A29657F1A005D2378 /* BrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63926B8929657F1A005D2378 /* BrowserController.swift */; };
 		63979B4D29F868E100EFF2C8 /* QrCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63979B4C29F868E100EFF2C8 /* QrCodeController.swift */; };
+		639ECDB32A1BF1CB0054A1D1 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639ECDB22A1BF1CB0054A1D1 /* HTTP.swift */; };
 		63A7101E2980677000B4B9B5 /* NftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7101D2980677000B4B9B5 /* NftViewCell.swift */; };
 		63D75C08295304E6008F28F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D75C07295304E6008F28F0 /* AppDelegate.swift */; };
 		63D75C0A295304E6008F28F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D75C09295304E6008F28F0 /* SceneDelegate.swift */; };
@@ -91,6 +92,7 @@
 		6379F9B6297FFB0D003FF525 /* Nft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nft.swift; sourceTree = "<group>"; };
 		63926B8929657F1A005D2378 /* BrowserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserController.swift; sourceTree = "<group>"; };
 		63979B4C29F868E100EFF2C8 /* QrCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeController.swift; sourceTree = "<group>"; };
+		639ECDB22A1BF1CB0054A1D1 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 		63A7101D2980677000B4B9B5 /* NftViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftViewCell.swift; sourceTree = "<group>"; };
 		63D75C04295304E6008F28F0 /* WatchChainIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchChainIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D75C07295304E6008F28F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		6306C79C2971620E00357A11 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				639ECDB12A1BEFA00054A1D1 /* Crypto API */,
 				6306C79D2971627900357A11 /* BrowserNftAPI.swift */,
 			);
 			path = API;
@@ -206,6 +209,14 @@
 				63E8956D2992B4CA0064705F /* RegisterController + Extension.swift */,
 			);
 			path = "Login+Register";
+			sourceTree = "<group>";
+		};
+		639ECDB12A1BEFA00054A1D1 /* Crypto API */ = {
+			isa = PBXGroup;
+			children = (
+				639ECDB22A1BF1CB0054A1D1 /* HTTP.swift */,
+			);
+			path = "Crypto API";
 			sourceTree = "<group>";
 		};
 		63A7101A2980673100B4B9B5 /* Cell */ = {
@@ -405,6 +416,7 @@
 				6307DCB72989D3B00028BA52 /* MyNftViewController.swift in Sources */,
 				635C7EFC2A01B42A0025BE84 /* UIButtonExtension.swift in Sources */,
 				6306C79E2971627900357A11 /* BrowserNftAPI.swift in Sources */,
+				639ECDB32A1BF1CB0054A1D1 /* HTTP.swift in Sources */,
 				63093E7B2979967700D02D67 /* User.swift in Sources */,
 				6345E71C2A14D92100F25EB7 /* CoinError.swift in Sources */,
 				636859CA299F262D002BD90F /* OneinchWalletController.swift in Sources */,
