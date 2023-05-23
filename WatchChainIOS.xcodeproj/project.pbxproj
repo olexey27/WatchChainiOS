@@ -27,6 +27,7 @@
 		63435A692A0AC28A00AA9545 /* titlegif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 63435A682A0AC28A00AA9545 /* titlegif.gif */; };
 		63435A6B2A0AC29A00AA9545 /* profilegif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 63435A6A2A0AC29A00AA9545 /* profilegif.gif */; };
 		6345E71C2A14D92100F25EB7 /* CoinError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6345E71B2A14D92100F25EB7 /* CoinError.swift */; };
+		6346B0282A1D005D00A8D7ED /* CoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346B0272A1D005D00A8D7ED /* CoinService.swift */; };
 		634943CF29888A100059139C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634943CE29888A100059139C /* CollectionViewCell.swift */; };
 		634C69A8296686D800F57355 /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C69A7296686D800F57355 /* ProfilController.swift */; };
 		634C69AF2966BF7000F57355 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C69AE2966BF7000F57355 /* RegisterController.swift */; };
@@ -80,6 +81,7 @@
 		63435A682A0AC28A00AA9545 /* titlegif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = titlegif.gif; sourceTree = "<group>"; };
 		63435A6A2A0AC29A00AA9545 /* profilegif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = profilegif.gif; sourceTree = "<group>"; };
 		6345E71B2A14D92100F25EB7 /* CoinError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinError.swift; sourceTree = "<group>"; };
+		6346B0272A1D005D00A8D7ED /* CoinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinService.swift; sourceTree = "<group>"; };
 		634943CE29888A100059139C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		634C69A7296686D800F57355 /* ProfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
 		634C69AE2966BF7000F57355 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
@@ -128,18 +130,11 @@
 		6304455F29630B1D00AD6DD7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6346B0252A1CFBE300A8D7ED /* NftController */,
 				63FE27612A0C1BDE00400204 /* CryptoController */,
 				6314A1332994505500D0B353 /* Web */,
 				63715E3E2990F4F500F7DBFF /* Login+Register */,
 				6307DCB52989D3860028BA52 /* AddNft */,
-				63926B8929657F1A005D2378 /* BrowserController.swift */,
-				634C69A7296686D800F57355 /* ProfilController.swift */,
-				634C69B42966BFE600F57355 /* FavoriteController.swift */,
-				6307DCB32989C8560028BA52 /* CreatorController.swift */,
-				633B75E7298B677E00C48FA0 /* BuyNftController.swift */,
-				6314A13629946F6C00D0B353 /* ProfileEditorController.swift */,
-				636859C5299F206D002BD90F /* WalletController.swift */,
-				63979B4C29F868E100EFF2C8 /* QrCodeController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -147,8 +142,8 @@
 		6306C79C2971620E00357A11 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				6346B0262A1CFC3500A8D7ED /* Nft API */,
 				639ECDB12A1BEFA00054A1D1 /* Crypto API */,
-				6306C79D2971627900357A11 /* BrowserNftAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -195,6 +190,48 @@
 			path = AnimatedImages;
 			sourceTree = "<group>";
 		};
+		6346B0232A1CFAF700A8D7ED /* NftCell */ = {
+			isa = PBXGroup;
+			children = (
+				63A7101D2980677000B4B9B5 /* NftViewCell.swift */,
+				634943CE29888A100059139C /* CollectionViewCell.swift */,
+			);
+			path = NftCell;
+			sourceTree = "<group>";
+		};
+		6346B0242A1CFBC900A8D7ED /* NftModels */ = {
+			isa = PBXGroup;
+			children = (
+				63093E7A2979967700D02D67 /* User.swift */,
+				6379F9B4297FFAB5003FF525 /* Collector.swift */,
+				6379F9B6297FFB0D003FF525 /* Nft.swift */,
+			);
+			path = NftModels;
+			sourceTree = "<group>";
+		};
+		6346B0252A1CFBE300A8D7ED /* NftController */ = {
+			isa = PBXGroup;
+			children = (
+				63926B8929657F1A005D2378 /* BrowserController.swift */,
+				634C69A7296686D800F57355 /* ProfilController.swift */,
+				634C69B42966BFE600F57355 /* FavoriteController.swift */,
+				6307DCB32989C8560028BA52 /* CreatorController.swift */,
+				633B75E7298B677E00C48FA0 /* BuyNftController.swift */,
+				6314A13629946F6C00D0B353 /* ProfileEditorController.swift */,
+				636859C5299F206D002BD90F /* WalletController.swift */,
+				63979B4C29F868E100EFF2C8 /* QrCodeController.swift */,
+			);
+			path = NftController;
+			sourceTree = "<group>";
+		};
+		6346B0262A1CFC3500A8D7ED /* Nft API */ = {
+			isa = PBXGroup;
+			children = (
+				6306C79D2971627900357A11 /* BrowserNftAPI.swift */,
+			);
+			path = "Nft API";
+			sourceTree = "<group>";
+		};
 		635C7EFA2A01B4030025BE84 /* AnimatedButtons */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +255,7 @@
 			children = (
 				639ECDB22A1BF1CB0054A1D1 /* HTTP.swift */,
 				639ECDB42A1BF7830054A1D1 /* Endpoint.swift */,
+				6346B0272A1D005D00A8D7ED /* CoinService.swift */,
 			);
 			path = "Crypto API";
 			sourceTree = "<group>";
@@ -225,9 +263,8 @@
 		63A7101A2980673100B4B9B5 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				6346B0232A1CFAF700A8D7ED /* NftCell */,
 				63D8D1C42A12B1A100BCBDEE /* CryptoCell */,
-				63A7101D2980677000B4B9B5 /* NftViewCell.swift */,
-				634943CE29888A100059139C /* CollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -254,8 +291,6 @@
 				63D8D1C52A12BAB800BCBDEE /* ViewModels */,
 				6314A1382994725000D0B353 /* DatePicker + ViewPicker */,
 				63A7101A2980673100B4B9B5 /* Cell */,
-				63093E782979888C00D02D67 /* AlertManager.swift */,
-				633B75E9298B683D00C48FA0 /* Validator.swift */,
 				6306C79C2971620E00357A11 /* API */,
 				6304455F29630B1D00AD6DD7 /* Controllers */,
 				63D75C2B29530F5C008F28F0 /* Models */,
@@ -276,6 +311,8 @@
 				633DBC48299091A700E0C5CE /* AnimatedImages */,
 				63D75C07295304E6008F28F0 /* AppDelegate.swift */,
 				63D75C09295304E6008F28F0 /* SceneDelegate.swift */,
+				63093E782979888C00D02D67 /* AlertManager.swift */,
+				633B75E9298B683D00C48FA0 /* Validator.swift */,
 				63D75C13295304E7008F28F0 /* Assets.xcassets */,
 				63D75C1F29530A74008F28F0 /* GoogleService-Info.plist */,
 			);
@@ -285,10 +322,8 @@
 		63D75C2B29530F5C008F28F0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6346B0242A1CFBC900A8D7ED /* NftModels */,
 				63FE27672A0C215A00400204 /* CryptoModels */,
-				63093E7A2979967700D02D67 /* User.swift */,
-				6379F9B4297FFAB5003FF525 /* Collector.swift */,
-				6379F9B6297FFB0D003FF525 /* Nft.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -420,6 +455,7 @@
 				635C7EFC2A01B42A0025BE84 /* UIButtonExtension.swift in Sources */,
 				639ECDB52A1BF7830054A1D1 /* Endpoint.swift in Sources */,
 				6306C79E2971627900357A11 /* BrowserNftAPI.swift in Sources */,
+				6346B0282A1D005D00A8D7ED /* CoinService.swift in Sources */,
 				639ECDB32A1BF1CB0054A1D1 /* HTTP.swift in Sources */,
 				63093E7B2979967700D02D67 /* User.swift in Sources */,
 				6345E71C2A14D92100F25EB7 /* CoinError.swift in Sources */,
