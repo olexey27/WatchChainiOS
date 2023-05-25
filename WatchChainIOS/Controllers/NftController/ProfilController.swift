@@ -37,8 +37,4 @@ class ProfilController: UIViewController {
     @IBAction func editButtonPressed() {
         performSegue(withIdentifier: "editProfileSeque", sender: self)
     }
-    
-    @IBAction func cryptoMarkt(_ sender: UIButton) {
-    }
-    
 }
