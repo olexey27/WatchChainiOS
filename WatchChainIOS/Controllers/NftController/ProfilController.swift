@@ -27,7 +27,6 @@ class ProfilController: UIViewController {
         
         profilePic.loadGif(name: "profilegif")
         titelPic.loadGif(name: "titlegif")
-        
     }
     
     @IBAction func logoutPressed() {

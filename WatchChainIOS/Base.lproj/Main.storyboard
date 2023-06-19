@@ -538,18 +538,18 @@
         <!--Profile-->
         <scene sceneID="UPE-Iz-qaX">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="f2s-P8-aif" customClass="ProfilController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfilController" modalPresentationStyle="fullScreen" id="f2s-P8-aif" customClass="ProfilController" customModule="WatchChainIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="frq-5x-ZPZ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="titlegif.gif" translatesAutoresizingMaskIntoConstraints="NO" id="F5v-P1-U1P">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F5v-P1-U1P">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="257"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="systemGray2Color"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profilegif.gif" translatesAutoresizingMaskIntoConstraints="NO" id="v06-sd-nn1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v06-sd-nn1">
                                 <rect key="frame" x="16" y="169" width="151" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1702,12 +1702,10 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="photo.artframe" catalog="system" width="128" height="93"/>
         <image name="photo.on.rectangle.angled" catalog="system" width="128" height="98"/>
-        <image name="profilegif.gif" width="800" height="800"/>
         <image name="qrcode" catalog="system" width="128" height="114"/>
         <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="suit.heart" catalog="system" width="128" height="107"/>
-        <image name="titlegif.gif" width="309" height="310"/>
         <image name="wallet" width="468" height="132"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

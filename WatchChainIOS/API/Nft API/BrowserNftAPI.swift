@@ -43,7 +43,7 @@ struct APIClient {
     }
     
     // MARK: Download Image
-    func downloadImage(imageUrl: URL, completion: @escaping(UIImage) -> Void) {
+    /*func downloadImage(imageUrl: URL, completion: @escaping(UIImage) -> Void) {
         
         // Session
         let session = URLSession.shared
@@ -52,6 +52,23 @@ struct APIClient {
         let downloadTask = session.downloadTask(with: imageUrl) { localURL, URLResponse, error in
             let image = UIImage(data: try! Data(contentsOf: localURL!))!
             completion(image)
+        }
+        downloadTask.resume()
+    }*/
+    
+    // MARK: Download Image shows the file that no longer exists as nil
+    func downloadImage(imageUrl: URL, completion: @escaping (UIImage?) -> Void) {
+        let session = URLSession.shared
+        let downloadTask = session.downloadTask(with: imageUrl) { localURL, _, error in
+            if let localURL = localURL {
+                if let imageData = try? Data(contentsOf: localURL), let image = UIImage(data: imageData) {
+                    completion(image)
+                } else {
+                    completion(nil)
+                }
+            } else {
+                completion(nil)
+            }
         }
         downloadTask.resume()
     }
