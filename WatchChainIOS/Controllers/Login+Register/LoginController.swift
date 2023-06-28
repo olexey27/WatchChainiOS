@@ -56,7 +56,7 @@ class LoginController: UIViewController {
                 if success {
                     
                     DispatchQueue.main.async {
-                        //self.alert(with: "Authefication success!!!")
+                        self.alert(with: "Authefication success!!!")
                         
                         guard let profileController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfilController") as? ProfilController else {
                             fatalError()

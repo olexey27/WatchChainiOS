@@ -26,8 +26,9 @@ class ProfileEditorController: UIViewController, UIPickerViewDataSource {
         
         keyboardDissmissable()
         
-        titleImg.loadGif(name: "titlegif")
-        logoImg.loadGif(name: "profilegif")
+        /// Animated Images
+        //titleImg.loadGif(name: "photo.fill")
+        //logoImg.loadGif(name: "person.fill")
         
         //userName.text = "Alexey"
         //emailField.text = "alexey27@gmail.com"

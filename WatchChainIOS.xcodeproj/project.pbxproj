@@ -24,8 +24,6 @@
 		633B75E8298B677E00C48FA0 /* BuyNftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B75E7298B677E00C48FA0 /* BuyNftController.swift */; };
 		633B75EA298B683D00C48FA0 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B75E9298B683D00C48FA0 /* Validator.swift */; };
 		633DBC4A299091E900E0C5CE /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633DBC49299091E900E0C5CE /* Background.swift */; };
-		63435A692A0AC28A00AA9545 /* titlegif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 63435A682A0AC28A00AA9545 /* titlegif.gif */; };
-		63435A6B2A0AC29A00AA9545 /* profilegif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 63435A6A2A0AC29A00AA9545 /* profilegif.gif */; };
 		6345E71C2A14D92100F25EB7 /* CoinError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6345E71B2A14D92100F25EB7 /* CoinError.swift */; };
 		6346B0282A1D005D00A8D7ED /* CoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346B0272A1D005D00A8D7ED /* CoinService.swift */; };
 		6346B02A2A1D090300A8D7ED /* HomeControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346B0292A1D090300A8D7ED /* HomeControllerViewModel.swift */; };
@@ -79,8 +77,6 @@
 		633B75E7298B677E00C48FA0 /* BuyNftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyNftController.swift; sourceTree = "<group>"; };
 		633B75E9298B683D00C48FA0 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		633DBC49299091E900E0C5CE /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
-		63435A682A0AC28A00AA9545 /* titlegif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = titlegif.gif; sourceTree = "<group>"; };
-		63435A6A2A0AC29A00AA9545 /* profilegif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = profilegif.gif; sourceTree = "<group>"; };
 		6345E71B2A14D92100F25EB7 /* CoinError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinError.swift; sourceTree = "<group>"; };
 		6346B0272A1D005D00A8D7ED /* CoinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinService.swift; sourceTree = "<group>"; };
 		6346B0292A1D090300A8D7ED /* HomeControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerViewModel.swift; sourceTree = "<group>"; };
@@ -185,8 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				63D75C30295340AC008F28F0 /* giphyImg.gif */,
-				63435A682A0AC28A00AA9545 /* titlegif.gif */,
-				63435A6A2A0AC29A00AA9545 /* profilegif.gif */,
 				633DBC49299091E900E0C5CE /* Background.swift */,
 			);
 			path = AnimatedImages;
@@ -431,11 +425,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63435A692A0AC28A00AA9545 /* titlegif.gif in Resources */,
 				63D75C17295304E7008F28F0 /* LaunchScreen.storyboard in Resources */,
 				63D75C2029530A74008F28F0 /* GoogleService-Info.plist in Resources */,
 				63D75C14295304E7008F28F0 /* Assets.xcassets in Resources */,
-				63435A6B2A0AC29A00AA9545 /* profilegif.gif in Resources */,
 				63D75C31295340AC008F28F0 /* giphyImg.gif in Resources */,
 				63D75C0F295304E6008F28F0 /* Main.storyboard in Resources */,
 			);

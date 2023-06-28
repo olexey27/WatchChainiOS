@@ -22,6 +22,7 @@ class RegisterController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /// Animated Background
         backgroundImg.loadGif(name: "giphyImg")
         
         usernameField.delegate = self
