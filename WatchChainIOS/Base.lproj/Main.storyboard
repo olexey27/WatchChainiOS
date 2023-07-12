@@ -1475,7 +1475,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0w6-2p-1g0">
-                                <rect key="frame" x="16" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
+                                <rect key="frame" x="16" y="-0.3333333333333286" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.left" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
@@ -1485,7 +1485,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Un7-IK-ppO">
-                                <rect key="frame" x="64" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
+                                <rect key="frame" x="64" y="-0.3333333333333286" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.right" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
@@ -1550,7 +1550,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zr2-i2-AN9">
-                                <rect key="frame" x="16" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
+                                <rect key="frame" x="16" y="-0.3333333333333286" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.left" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
@@ -1560,7 +1560,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7D-Tr-oeX">
-                                <rect key="frame" x="64" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
+                                <rect key="frame" x="64" y="-0.3333333333333286" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.right" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
@@ -1625,7 +1625,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcE-2l-KQB">
-                                <rect key="frame" x="16" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
+                                <rect key="frame" x="16" y="-0.3333333333333286" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.left" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
@@ -1635,7 +1635,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2s-YX-y9C">
-                                <rect key="frame" x="64" y="-0.33333333333333215" width="40" height="34.666666666666657"/>
+                                <rect key="frame" x="64" y="-0.3333333333333286" width="40" height="34.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="chevron.right" catalog="system">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
