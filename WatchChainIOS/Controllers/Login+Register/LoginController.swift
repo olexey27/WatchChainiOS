@@ -50,7 +50,7 @@ class LoginController: UIViewController {
                 success, authenticationError in
                 if success {
                     DispatchQueue.main.async {
-                        //self.alert(with: "Authefication success!!!")
+                        //self.alert(with: "Authefication success!!!") /// Test
                         guard let profileController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfilController") as? ProfilController else {
                             fatalError()
                         }
