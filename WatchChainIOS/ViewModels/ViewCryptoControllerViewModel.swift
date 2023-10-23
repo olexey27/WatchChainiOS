@@ -20,7 +20,6 @@ class ViewCryptoControllerViewModel {
         self.coin = coin
         self.loadImage()
     }
-    
     private func loadImage() {
         
         DispatchQueue.global().async { [weak self] in
