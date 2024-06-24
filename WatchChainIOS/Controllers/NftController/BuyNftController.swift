@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import AVFoundation
+import Firebase
 
 class BuyNftController: UIViewController {
     
@@ -13,6 +15,8 @@ class BuyNftController: UIViewController {
     @IBOutlet weak var nftName: UILabel!
     @IBOutlet weak var nftPrice: UILabel!
     @IBOutlet weak var backgroundImg: UIImageView!
+    
+    var player: AVAudioPlayer?
     
     let apiClient = APIClient()
     
@@ -54,5 +58,24 @@ class BuyNftController: UIViewController {
         add.addAction(UIAlertAction(title: "No", style: .default))
         
         present(add, animated: true)
+    }
+    @IBAction func buyPressed(_ sender: UIButton) {
+        playSound()
+    }
+            
+    func playSound() {
+        guard let url = Bundle.main.url(forResource: "mr-krabs-money", withExtension: "mp3") else
+        { return }
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            guard let player = player else { return }
+            
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
 }

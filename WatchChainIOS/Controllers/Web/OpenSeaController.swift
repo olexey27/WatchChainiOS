@@ -7,6 +7,7 @@
 
 import UIKit
 import WebKit
+import Firebase
 
 class OpenSeaController: UIViewController {
     

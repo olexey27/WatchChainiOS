@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F81D7499CE3B58CC5767CA3 /* Pods_WatchChainIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B8975898806AED072CA193 /* Pods_WatchChainIOS.framework */; };
 		6304456129630B4500AD6DD7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6304456029630B4500AD6DD7 /* LoginController.swift */; };
 		6306C79E2971627900357A11 /* BrowserNftAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6306C79D2971627900357A11 /* BrowserNftAPI.swift */; };
 		6307DCB42989C8560028BA52 /* CreatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6307DCB32989C8560028BA52 /* CreatorController.swift */; };
@@ -38,11 +39,16 @@
 		636859CA299F262D002BD90F /* OneinchWalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636859C9299F262D002BD90F /* OneinchWalletController.swift */; };
 		6379F9B5297FFAB5003FF525 /* Collector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379F9B4297FFAB5003FF525 /* Collector.swift */; };
 		6379F9B7297FFB0E003FF525 /* Nft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379F9B6297FFB0D003FF525 /* Nft.swift */; };
+		637D4D9A2BFFD2A100ECFCD9 /* engineer_no01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 637D4D992BFFD2A100ECFCD9 /* engineer_no01.mp3 */; };
+		637D4D9C2BFFD4CF00ECFCD9 /* mr-krabs-money.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 637D4D9B2BFFD4CF00ECFCD9 /* mr-krabs-money.mp3 */; };
 		63926B8A29657F1A005D2378 /* BrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63926B8929657F1A005D2378 /* BrowserController.swift */; };
 		63979B4D29F868E100EFF2C8 /* QrCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63979B4C29F868E100EFF2C8 /* QrCodeController.swift */; };
 		639ECDB32A1BF1CB0054A1D1 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639ECDB22A1BF1CB0054A1D1 /* HTTP.swift */; };
 		639ECDB52A1BF7830054A1D1 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639ECDB42A1BF7830054A1D1 /* Endpoint.swift */; };
 		63A7101E2980677000B4B9B5 /* NftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7101D2980677000B4B9B5 /* NftViewCell.swift */; };
+		63A725582BFBF18A0010BCE9 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A725552BFBF18A0010BCE9 /* Question.swift */; };
+		63A725592BFBF18A0010BCE9 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A725562BFBF18A0010BCE9 /* QuizBrain.swift */; };
+		63A7255C2BFBF1B20010BCE9 /* QuizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7255B2BFBF1B20010BCE9 /* QuizController.swift */; };
 		63D75C08295304E6008F28F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D75C07295304E6008F28F0 /* AppDelegate.swift */; };
 		63D75C0A295304E6008F28F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D75C09295304E6008F28F0 /* SceneDelegate.swift */; };
 		63D75C0F295304E6008F28F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D75C0D295304E6008F28F0 /* Main.storyboard */; };
@@ -52,6 +58,7 @@
 		63D75C31295340AC008F28F0 /* giphyImg.gif in Resources */ = {isa = PBXBuildFile; fileRef = 63D75C30295340AC008F28F0 /* giphyImg.gif */; };
 		63D8D1C32A129D6B00BCBDEE /* ViewCryptoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D8D1C22A129D6B00BCBDEE /* ViewCryptoController.swift */; };
 		63D8D1C72A12BAE200BCBDEE /* ViewCryptoControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D8D1C62A12BAE200BCBDEE /* ViewCryptoControllerViewModel.swift */; };
+		63E08A412C29CB22002CE5F6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E08A402C29CB22002CE5F6 /* WelcomeViewController.swift */; };
 		63E8956E2992B4CA0064705F /* RegisterController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8956D2992B4CA0064705F /* RegisterController + Extension.swift */; };
 		63FE27632A0C1C0A00400204 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FE27622A0C1C0A00400204 /* HomeController.swift */; };
 		63FE27662A0C1FE900400204 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FE27652A0C1FE900400204 /* Constants.swift */; };
@@ -60,6 +67,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44B8975898806AED072CA193 /* Pods_WatchChainIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchChainIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6304456029630B4500AD6DD7 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		6306C79D2971627900357A11 /* BrowserNftAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserNftAPI.swift; sourceTree = "<group>"; };
 		6307DCB32989C8560028BA52 /* CreatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorController.swift; sourceTree = "<group>"; };
@@ -91,11 +99,16 @@
 		636859C9299F262D002BD90F /* OneinchWalletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneinchWalletController.swift; sourceTree = "<group>"; };
 		6379F9B4297FFAB5003FF525 /* Collector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collector.swift; sourceTree = "<group>"; };
 		6379F9B6297FFB0D003FF525 /* Nft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nft.swift; sourceTree = "<group>"; };
+		637D4D992BFFD2A100ECFCD9 /* engineer_no01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = engineer_no01.mp3; sourceTree = SOURCE_ROOT; };
+		637D4D9B2BFFD4CF00ECFCD9 /* mr-krabs-money.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "mr-krabs-money.mp3"; sourceTree = "<group>"; };
 		63926B8929657F1A005D2378 /* BrowserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserController.swift; sourceTree = "<group>"; };
 		63979B4C29F868E100EFF2C8 /* QrCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeController.swift; sourceTree = "<group>"; };
 		639ECDB22A1BF1CB0054A1D1 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 		639ECDB42A1BF7830054A1D1 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		63A7101D2980677000B4B9B5 /* NftViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftViewCell.swift; sourceTree = "<group>"; };
+		63A725552BFBF18A0010BCE9 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		63A725562BFBF18A0010BCE9 /* QuizBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		63A7255B2BFBF1B20010BCE9 /* QuizController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizController.swift; sourceTree = "<group>"; };
 		63D75C04295304E6008F28F0 /* WatchChainIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchChainIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D75C07295304E6008F28F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D75C09295304E6008F28F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,11 +120,14 @@
 		63D75C30295340AC008F28F0 /* giphyImg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphyImg.gif; sourceTree = "<group>"; };
 		63D8D1C22A129D6B00BCBDEE /* ViewCryptoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCryptoController.swift; sourceTree = "<group>"; };
 		63D8D1C62A12BAE200BCBDEE /* ViewCryptoControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCryptoControllerViewModel.swift; sourceTree = "<group>"; };
+		63E08A402C29CB22002CE5F6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		63E8956D2992B4CA0064705F /* RegisterController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterController + Extension.swift"; sourceTree = "<group>"; };
 		63FE27622A0C1C0A00400204 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		63FE27652A0C1FE900400204 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		63FE27682A0C217B00400204 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		63FE276B2A0C242A00400204 /* CoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCell.swift; sourceTree = "<group>"; };
+		6DECADC3DB3F0451D54CBB36 /* Pods-WatchChainIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchChainIOS.release.xcconfig"; path = "Target Support Files/Pods-WatchChainIOS/Pods-WatchChainIOS.release.xcconfig"; sourceTree = "<group>"; };
+		8466B5DA5AB1417CF1B3A228 /* Pods-WatchChainIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchChainIOS.debug.xcconfig"; path = "Target Support Files/Pods-WatchChainIOS/Pods-WatchChainIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,15 +135,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F81D7499CE3B58CC5767CA3 /* Pods_WatchChainIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		130F9CE944B6A6D61B89045D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44B8975898806AED072CA193 /* Pods_WatchChainIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62724BDDDCFF9D0787EFAE43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8466B5DA5AB1417CF1B3A228 /* Pods-WatchChainIOS.debug.xcconfig */,
+				6DECADC3DB3F0451D54CBB36 /* Pods-WatchChainIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6304455F29630B1D00AD6DD7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				63E08A3F2C29CABC002CE5F6 /* Firebase */,
+				63A7255A2BFBF19F0010BCE9 /* QuizController */,
 				6346B0252A1CFBE300A8D7ED /* NftController */,
 				63FE27612A0C1BDE00400204 /* CryptoController */,
 				6314A1332994505500D0B353 /* Web */,
@@ -246,6 +282,15 @@
 			path = "Login+Register";
 			sourceTree = "<group>";
 		};
+		637D4D982BFFD28400ECFCD9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				637D4D9B2BFFD4CF00ECFCD9 /* mr-krabs-money.mp3 */,
+				637D4D992BFFD2A100ECFCD9 /* engineer_no01.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		639ECDB12A1BEFA00054A1D1 /* Crypto API */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,11 +310,30 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		63A725572BFBF18A0010BCE9 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				63A725552BFBF18A0010BCE9 /* Question.swift */,
+				63A725562BFBF18A0010BCE9 /* QuizBrain.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		63A7255A2BFBF19F0010BCE9 /* QuizController */ = {
+			isa = PBXGroup;
+			children = (
+				63A7255B2BFBF1B20010BCE9 /* QuizController.swift */,
+			);
+			path = QuizController;
+			sourceTree = "<group>";
+		};
 		63D75BFB295304E6008F28F0 = {
 			isa = PBXGroup;
 			children = (
 				63D75C06295304E6008F28F0 /* WatchChainIOS */,
 				63D75C05295304E6008F28F0 /* Products */,
+				62724BDDDCFF9D0787EFAE43 /* Pods */,
+				130F9CE944B6A6D61B89045D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -284,6 +348,7 @@
 		63D75C06295304E6008F28F0 /* WatchChainIOS */ = {
 			isa = PBXGroup;
 			children = (
+				63A725572BFBF18A0010BCE9 /* Quiz */,
 				63D8D1C52A12BAB800BCBDEE /* ViewModels */,
 				6314A1382994725000D0B353 /* DatePicker + ViewPicker */,
 				63A7101A2980673100B4B9B5 /* Cell */,
@@ -293,6 +358,7 @@
 				63D75C1E29530A46008F28F0 /* Supporting */,
 				63D75C0D295304E6008F28F0 /* Main.storyboard */,
 				63D75C15295304E7008F28F0 /* LaunchScreen.storyboard */,
+				637D4D982BFFD28400ECFCD9 /* Sounds */,
 				63D75C18295304E7008F28F0 /* Info.plist */,
 				6307DCBA2989E3AF0028BA52 /* AddNftCoreData.xcdatamodeld */,
 			);
@@ -341,6 +407,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		63E08A3F2C29CABC002CE5F6 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				63E08A402C29CB22002CE5F6 /* WelcomeViewController.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		63FE27612A0C1BDE00400204 /* CryptoController */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,9 +448,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63D75C1B295304E8008F28F0 /* Build configuration list for PBXNativeTarget "WatchChainIOS" */;
 			buildPhases = (
+				83360EB1CEA2DEFC06E0738A /* [CP] Check Pods Manifest.lock */,
 				63D75C00295304E6008F28F0 /* Sources */,
 				63D75C01295304E6008F28F0 /* Frameworks */,
 				63D75C02295304E6008F28F0 /* Resources */,
+				68970864A40902147650EAC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -395,7 +471,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					63D75C03295304E6008F28F0 = {
 						CreatedOnToolsVersion = 14.2;
@@ -426,14 +502,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D75C17295304E7008F28F0 /* LaunchScreen.storyboard in Resources */,
+				637D4D9A2BFFD2A100ECFCD9 /* engineer_no01.mp3 in Resources */,
 				63D75C2029530A74008F28F0 /* GoogleService-Info.plist in Resources */,
 				63D75C14295304E7008F28F0 /* Assets.xcassets in Resources */,
+				637D4D9C2BFFD4CF00ECFCD9 /* mr-krabs-money.mp3 in Resources */,
 				63D75C31295340AC008F28F0 /* giphyImg.gif in Resources */,
 				63D75C0F295304E6008F28F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68970864A40902147650EAC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchChainIOS/Pods-WatchChainIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchChainIOS/Pods-WatchChainIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchChainIOS/Pods-WatchChainIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83360EB1CEA2DEFC06E0738A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchChainIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63D75C00295304E6008F28F0 /* Sources */ = {
@@ -467,6 +587,7 @@
 				634C69A8296686D800F57355 /* ProfilController.swift in Sources */,
 				6314A13E2994748400D0B353 /* Extension.swift in Sources */,
 				6307DCBC2989E3AF0028BA52 /* AddNftCoreData.xcdatamodeld in Sources */,
+				63A725592BFBF18A0010BCE9 /* QuizBrain.swift in Sources */,
 				636859C6299F206D002BD90F /* WalletController.swift in Sources */,
 				63926B8A29657F1A005D2378 /* BrowserController.swift in Sources */,
 				6346B02A2A1D090300A8D7ED /* HomeControllerViewModel.swift in Sources */,
@@ -481,10 +602,13 @@
 				636859C8299F23E5002BD90F /* CronosWalletController.swift in Sources */,
 				6314A13A2994727A00D0B353 /* datepicker.swift in Sources */,
 				6304456129630B4500AD6DD7 /* LoginController.swift in Sources */,
+				63A725582BFBF18A0010BCE9 /* Question.swift in Sources */,
 				63D75C0A295304E6008F28F0 /* SceneDelegate.swift in Sources */,
+				63A7255C2BFBF1B20010BCE9 /* QuizController.swift in Sources */,
 				63FE27692A0C217B00400204 /* Coin.swift in Sources */,
 				6314A132299424FD00D0B353 /* MetaWalletController.swift in Sources */,
 				63FE27662A0C1FE900400204 /* Constants.swift in Sources */,
+				63E08A412C29CB22002CE5F6 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +670,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -560,7 +685,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -606,6 +731,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -614,7 +740,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -626,6 +752,7 @@
 		};
 		63D75C1C295304E8008F28F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8466B5DA5AB1417CF1B3A228 /* Pods-WatchChainIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -649,14 +776,19 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.ak.WatchChainIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		63D75C1D295304E8008F28F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DECADC3DB3F0451D54CBB36 /* Pods-WatchChainIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -680,9 +812,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.ak.WatchChainIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

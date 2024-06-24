@@ -7,6 +7,7 @@
 
 import UIKit
 import VisionKit
+import Firebase
 
 class QrCodeController: UIViewController {
     

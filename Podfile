@@ -1,11 +1,10 @@
-platform :ios, '13.0'
+platform :ios, '17.5'
 
 target 'WatchChainIOS' do
   use_frameworks!
 
-	pod 'FirebaseCore'
-	pod 'FirebaseAuth'
-	pod 'FirebaseFirestore'
-	pod 'FirebaseStorage'
+  # Pods for WatchChainIOS
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
 end

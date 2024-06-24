@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 struct Response: Codable {
     var collectors: [Collector]
