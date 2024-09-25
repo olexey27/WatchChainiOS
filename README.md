@@ -17,7 +17,7 @@ WatchChain ist eine iOS-Anwendung, die es Benutzern ermöglicht, Kryptowährunge
 ## Installation
 1.Projekt klonen:
 ```
-git [clone](https://github.com/olexey27/WatchChainiOS.git)
+git clone https://github.com/olexey27/WatchChainiOS.git
 ```
 2.Abhängigkeiten installieren: Gehe in das Projektverzeichnis und führe den folgenden Befehl aus:
 ```
