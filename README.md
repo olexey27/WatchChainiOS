@@ -15,32 +15,32 @@ WatchChain ist eine iOS-Anwendung, die es Benutzern ermöglicht, Kryptowährunge
 - Abhängigkeiten: `Firebase` `Alamofire` `Charts` `IQKeyboardManagerSwift`
 
 ## Installation
-1.Projekt klonen:
+1. Projekt klonen:
 ```
 git clone https://github.com/olexey27/WatchChainiOS.git
 ```
-2.Abhängigkeiten installieren: Gehe in das Projektverzeichnis und führe den folgenden Befehl aus:
+2. Abhängigkeiten installieren: Gehe in das Projektverzeichnis und führe den folgenden Befehl aus:
 ```
 pod install
 ```
-3.Öffne das Projekt: Öffne die `.xcworkspace` Datei in Xcode:
+3. Öffne das Projekt: Öffne die `.xcworkspace` Datei in Xcode:
 ```
 open WatchChain.xcworkspace
 ```
-4.Firebase-Konfiguration:
+4. Firebase-Konfiguration:
 - Lade die `GoogleService-Info.plist` Datei aus der Firebase-Konsole herunter und füge sie dem Projekt hinzu.
 
-5.Build und Ausführen:
+5. Build und Ausführen:
 - Wähle dein Gerät oder Simulator und klicke auf `Build` und `Run` in Xcode.
 
 ## Verwendung
-1.Portfolio Hinzufügen:
+1. Portfolio Hinzufügen:
 - Gehe zur Portfolio-Seite und klicke auf `Add`. Füge die gewünschte Kryptowährung hinzu und gib den Betrag ein.
 
-2.Kurse und Charts:
+2. Kurse und Charts:
 - Wähle eine Kryptowährung aus, um detaillierte Informationen, Preistrends und Analysen anzuzeigen.
 
-3.Alarmfunktion:
+3. Alarmfunktion:
 - Setze Alarme, um benachrichtigt zu werden, wenn bestimmte Kursziele erreicht werden.
 
 ## Technologie-Stack
