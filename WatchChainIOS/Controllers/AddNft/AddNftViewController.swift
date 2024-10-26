@@ -38,7 +38,7 @@ class AddNftViewController: UIViewController, UINavigationControllerDelegate, UI
         
         if targetName != "" {
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-            let context = appDelegate.persistentContainer.viewContext
+            let context = appDelegate.addNftPersistentContainer.viewContext
             let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Collection")
             let idString = targetId?.uuidString
             fetchRequest.predicate = NSPredicate(format: "id = %@", idString!)
@@ -114,7 +114,7 @@ class AddNftViewController: UIViewController, UINavigationControllerDelegate, UI
         
     @IBAction func saveButton(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
+        let context = appDelegate.addNftPersistentContainer.viewContext
         let saveData = NSEntityDescription.insertNewObject(forEntityName: "Collection", into: context)
             
         saveData.setValue(nameTextField.text!, forKey: "name")

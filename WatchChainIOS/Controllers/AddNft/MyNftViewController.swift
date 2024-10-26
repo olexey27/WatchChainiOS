@@ -46,7 +46,7 @@ class MyNftViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.idArray.removeAll(keepingCapacity: true)
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        let context = appDelegate.persistentContainer.viewContext
+        let context = appDelegate.addNftPersistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Collection")
         fetchRequest.returnsObjectsAsFaults = false
         do {
@@ -85,7 +85,7 @@ class MyNftViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        let context = appDelegate.persistentContainer.viewContext
+        let context = appDelegate.addNftPersistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Collection")
         let idString = idArray[indexPath.row].uuidString
         fetchRequest.predicate = NSPredicate(format: "id = %@", idString)
