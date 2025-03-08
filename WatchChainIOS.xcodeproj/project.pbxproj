@@ -148,6 +148,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		6324EAF42D3851AA00290A7E /* HabitTracker */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = HabitTracker; sourceTree = "<group>"; };
+		6324EAF72D38693F00290A7E /* HabitTracker */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = HabitTracker; sourceTree = "<group>"; };
+		6324EAFA2D387D2500290A7E /* Extensions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Extensions; sourceTree = "<group>"; };
 		633DA92E2CC84C4B00C07478 /* ToDo */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ToDo; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -389,6 +392,7 @@
 		63D75C06295304E6008F28F0 /* WatchChainIOS */ = {
 			isa = PBXGroup;
 			children = (
+				6324EAFA2D387D2500290A7E /* Extensions */,
 				63A725572BFBF18A0010BCE9 /* Quiz */,
 				63D8D1C52A12BAB800BCBDEE /* ViewModels */,
 				6314A1382994725000D0B353 /* DatePicker + ViewPicker */,
@@ -426,6 +430,7 @@
 		63D75C2B29530F5C008F28F0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6324EAF42D3851AA00290A7E /* HabitTracker */,
 				63DE7D512C6028D000E6AC69 /* Firebase */,
 				6346B0242A1CFBC900A8D7ED /* NftModels */,
 				63FE27672A0C215A00400204 /* CryptoModels */,
@@ -444,6 +449,7 @@
 		63D8D1C52A12BAB800BCBDEE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				6324EAF72D38693F00290A7E /* HabitTracker */,
 				63D8D1C62A12BAE200BCBDEE /* ViewCryptoControllerViewModel.swift */,
 				6346B0292A1D090300A8D7ED /* HomeControllerViewModel.swift */,
 			);
@@ -522,6 +528,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				6324EAF42D3851AA00290A7E /* HabitTracker */,
+				6324EAF72D38693F00290A7E /* HabitTracker */,
+				6324EAFA2D387D2500290A7E /* Extensions */,
 				633DA92E2CC84C4B00C07478 /* ToDo */,
 			);
 			name = WatchChainIOS;
